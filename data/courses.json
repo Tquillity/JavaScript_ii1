@@ -1,0 +1,162 @@
+[
+    {
+        "courseId": "1",
+        "courseTitle": "Big Data Analytics",
+        "courseReg": "CS100",
+        "durationDays": 35,
+        "deliveryMethod": "On-site",
+        "imagePlaceholder": "image_link_here",
+        "startDate": "2024-09-05",
+        "endDate": "2024-11-20"
+    },
+    {
+        "courseId": "2",
+        "courseTitle": "Back-End Development with Node.js",
+        "courseReg": "CS101",
+        "durationDays": 51,
+        "deliveryMethod": "Remote",
+        "imagePlaceholder": "image_link_here",
+        "startDate": "2024-04-27",
+        "endDate": "2024-09-10"
+    },
+    {
+        "courseId": "3",
+        "courseTitle": "Machine Learning with Python",
+        "courseReg": "CS102",
+        "durationDays": 13,
+        "deliveryMethod": "Both",
+        "imagePlaceholder": "image_link_here",
+        "startDate": "2024-07-13",
+        "endDate": "2024-10-30"
+    },
+    {
+        "courseId": "4",
+        "courseTitle": "Introduction to Python Programming",
+        "courseReg": "CS103",
+        "durationDays": 16,
+        "deliveryMethod": "Both",
+        "imagePlaceholder": "image_link_here",
+        "startDate": "2024-08-12",
+        "endDate": "2024-10-08"
+    },
+    {
+        "courseId": "5",
+        "courseTitle": "Mobile App Development with Flutter",
+        "courseReg": "CS104",
+        "durationDays": 23,
+        "deliveryMethod": "Remote",
+        "imagePlaceholder": "image_link_here",
+        "startDate": "2024-01-10",
+        "endDate": "2024-11-08"
+    },
+    {
+        "courseId": "6",
+        "courseTitle": "Back-End Development with Node.js",
+        "courseReg": "CS105",
+        "durationDays": 29,
+        "deliveryMethod": "Remote",
+        "imagePlaceholder": "image_link_here",
+        "startDate": "2024-09-21",
+        "endDate": "2024-06-01"
+    },
+    {
+        "courseId": "7",
+        "courseTitle": "Database Management with SQL",
+        "courseReg": "CS106",
+        "durationDays": 20,
+        "deliveryMethod": "Both",
+        "imagePlaceholder": "image_link_here",
+        "startDate": "2024-04-23",
+        "endDate": "2024-11-27"
+    },
+    {
+        "courseId": "8",
+        "courseTitle": "Front-End Development with React",
+        "courseReg": "CS107",
+        "durationDays": 42,
+        "deliveryMethod": "On-site",
+        "imagePlaceholder": "image_link_here",
+        "startDate": "2024-02-15",
+        "endDate": "2024-04-28"
+    },
+    {
+        "courseId": "9",
+        "courseTitle": "Cybersecurity Fundamentals",
+        "courseReg": "CS108",
+        "durationDays": 30,
+        "deliveryMethod": "Remote",
+        "imagePlaceholder": "image_link_here",
+        "startDate": "2024-06-10",
+        "endDate": "2024-07-10"
+    },
+    {
+        "courseId": "10",
+        "courseTitle": "Game Development with Unity",
+        "courseReg": "CS109",
+        "durationDays": 45,
+        "deliveryMethod": "Both",
+        "imagePlaceholder": "image_link_here",
+        "startDate": "2024-05-01",
+        "endDate": "2024-06-15"
+    },
+    {
+        "courseId": "11",
+        "courseTitle": "UI/UX Design Principles",
+        "courseReg": "CS110",
+        "durationDays": 60,
+        "deliveryMethod": "On-site",
+        "imagePlaceholder": "image_link_here",
+        "startDate": "2024-03-20",
+        "endDate": "2024-05-19"
+    },
+    {
+        "courseId": "12",
+        "courseTitle": "Software Testing and QA",
+        "courseReg": "CS111",
+        "durationDays": 25,
+        "deliveryMethod": "Remote",
+        "imagePlaceholder": "image_link_here",
+        "startDate": "2024-08-05",
+        "endDate": "2024-08-30"
+    },
+    {
+        "courseId": "13",
+        "courseTitle": "Blockchain Basics",
+        "courseReg": "CS112",
+        "durationDays": 18,
+        "deliveryMethod": "Both",
+        "imagePlaceholder": "image_link_here",
+        "startDate": "2024-07-01",
+        "endDate": "2024-07-19"
+    },
+    {
+        "courseId": "14",
+        "courseTitle": "Big Data Analytics",
+        "courseReg": "CS100",
+        "durationDays": 35,
+        "deliveryMethod": "On-site",
+        "imagePlaceholder": "image_link_here",
+        "startDate": "2024-09-05",
+        "endDate": "2024-11-20"
+    },
+    {
+        "courseId": "15",
+        "courseTitle": "Back-End Development with Node.js",
+        "courseReg": "CS101",
+        "durationDays": 51,
+        "deliveryMethod": "Remote",
+        "imagePlaceholder": "image_link_here",
+        "startDate": "2024-04-27",
+        "endDate": "2024-09-10"
+    },
+    {
+        "courseId": "16",
+        "courseTitle": "Machine Learning with Python",
+        "courseReg": "CS102",
+        "durationDays": 13,
+        "deliveryMethod": "Both",
+        "imagePlaceholder": "image_link_here",
+        "startDate": "2024-07-13",
+        "endDate": "2024-10-30"
+    },
+]
