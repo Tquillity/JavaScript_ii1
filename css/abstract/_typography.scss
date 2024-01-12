@@ -1,0 +1,10 @@
+// ================================================
+// _typography.scss
+// ================================================
+
+$headerFont: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+$textFont: "Rubrik", Arial;
+
+@function pxToRem($size) {
+    @return calc($size / 16) * 1rem;
+}

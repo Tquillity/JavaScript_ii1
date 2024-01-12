@@ -1,0 +1,67 @@
+// =======================================
+// _general.scss
+// =======================================
+
+html {
+    font-family: $textFont;
+}
+
+body {
+    background-color: $background-color;
+}
+
+body, html {
+    height: 100%;
+    margin: auto;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $headerFont;
+}
+
+h1 {
+    font-size: pxToRem(40);
+}
+
+h2 {
+    font-size: pxToRem(28);
+}
+
+p, span, a, li {
+    font-size: pxToRem(16);
+}
+
+button, .btn {
+    display: flex;
+    align-items: center;
+    border: 0;
+    border-radius: pxToRem(5);
+    padding: pxToRem(10);
+    padding-left: pxToRem(20);
+    padding-right: pxToRem(20);
+    color: $button-text-color;
+    background-color: $button-primary-color;
+    font-family: $textFont;
+    font-size: pxToRem(15);
+    cursor: pointer;
+    transition: background-color 0.2s ease-in;
+}
+
+button:hover, btn:hover {
+    background-color: shade($button-primary-color, 30%)
+}
+
+.card {
+    border: pxToRem(2) solid $card-border-color;
+    border-radius: pxToRem(15);
+    overflow: hidden;
+    background-color: $card-background-color;
+}
+
+.container {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 pxToRem(20);
+    max-width: $pageWidthDesk;
+}
