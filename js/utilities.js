@@ -3,4 +3,4 @@ const convertFormDataToJson = (formData) => {
     return data;
 };
 
-export { convertFromDataToJson };
+export { convertFormDataToJson };

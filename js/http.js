@@ -79,7 +79,7 @@ export default class HttpClient {
         try {
             const response = await fetch(this.#url, {
                 method: 'DELETE',
-                });
+            });
         } catch (error) {
             console.log(error);
             throw new Error(`Something went wrong in the DELETE-Method: ${error}`);
