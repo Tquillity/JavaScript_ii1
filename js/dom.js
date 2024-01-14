@@ -33,14 +33,18 @@ const createCourseInfo = (course) => {                          // function to c
 };
 
 const createCourseList = (courses, element) => {
+    console.log("Inside createCourseList - courses:", courses);
+    console.log("Inside createCourseList - element:", element);
     courses.forEach((course) => {
         const container = createDiv();  // ! Läs på: Ska jag ha argument i createDiv() ex. class
-        container.setAttribure('courseId', course.id);
+        container.setAttribute('courseId', course.id);
         container.appendChild(createSpan(course.title));
         container.appendChild(createSpan(course.deliveryMethod));
         container.appendChild(createSpan(course.length));           // ! Läs på: antal dagar genererades inte korrekt, läs på om hur jag tar fram antal dagar dynamiskt
         container.appendChild(createSpan(course.startDate));        // ! baserat på start och slutdatum. 
         container.appendChild(createSpan(course.endDate));
+
+        element.appendChild(container);
     });
 };
 
