@@ -22,7 +22,7 @@ const getCourse = async(id) => {
 const loadDataToForm = (course) => {
     const entries = new URLSearchParams(course).entries();
     for (let [key, value] of entries) {
-        if (key !== id) {
+        if (key !== 'id') {
             const input = form.elements[key];
             input.value = value;
         }

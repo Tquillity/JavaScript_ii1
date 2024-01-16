@@ -24,11 +24,11 @@ const selectedCourse = (event) => {
     if (event.target.localName === 'div') {
         courseId = event.target.getAttribute('courseId');
     } else if (event.target.localName === 'span') {
-        vehicleId = event.target.parentElement.getAttribute('courseId');
+        courseId = event.target.parentElement.getAttribute('courseId');
     }
 
     // navigate to edit-courses.html
-    location.href = `edit-course.html?id=${courseId}`;
+    location.href = `edit-courses.html?id=${courseId}`;
 };
 
 document.addEventListener('DOMContentLoaded', initPage);
