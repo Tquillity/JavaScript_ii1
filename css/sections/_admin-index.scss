@@ -1,0 +1,13 @@
+#courses div {
+    display: flex;
+    gap: pxToRem(10);
+    margin: pxToRem(15) 0;
+    padding: pxToRem(10) pxToRem(8);
+    border: solid 2px $card-border-color;
+    border-radius: pxToRem(15);
+    background-color: $card-background-color;
+    color: $light-text-color;
+    box-shadow: 0px 0px 15px 1px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+  }
+  

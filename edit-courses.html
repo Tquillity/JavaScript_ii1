@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Courses</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="js/edit-course.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Header Placeholder</h1>
+    </header>
+
+
+    <main>
+        <section class="container">
+            <h1>Edit Courses</h1>
+
+            <div class="button-container">
+                <button id="deleteButton" class="button">Delete the Course</button>
+            </div>
+
+            <form id="updateCourseForm">
+                <div class="form-group">
+                    <label for="title">Course Title</label>
+                    <input type="text" id="title" name="title" placeholder="Course Name">
+                </div>
+                <div class="form-group">
+                    <label for="reg">Course Registration Number</label>
+                    <input type="text" id="reg" name="reg" placeholder="Course Registration Number">
+                </div>
+                <div class="form-group">
+                    <label for="deliveryMethod">Course Delivery Method</label>
+                    <select id="deliveryMethod" name="deliveryMethod">
+                        <option value="Remote">Online</option>
+                        <option value="On-Site">Classroom</option>
+                        <option value="Both">Blended</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="imageUrl">Course Image URL</label>
+                    <input type="text" id="imageUrl" name="imageUrl" value="adress here..."
+                        placeholder="ange namn på bild här..."> <!-- ! Byt ut mot en bilduppladdningssida -->
+                </div>
+                <!-- ! Byt ut om jag har tid över till ett JavaScript-baserat date picker library -->
+                <!-- ! för att garantera en bättre lösning överolika browsers, samt att detta är en JS-kurs =P -->
+                <!-- ! Ex. jQuery UI DatePicker, Pikaday, or Flatpickr. -->
+                <div class="form-group">
+                    <label for="startDate">Course Starting Date</label>
+                    <input type="date" id="startDate" name="startDate" placeholder="Course Starting Date">
+                </div>
+                <div class="form-group">
+                    <label for="endDate">Course Ending Date</label>
+                    <input type="date" id="endDate" name="endDate" placeholder="Course Ending Date">
+                </div>
+                <div class="form-group">
+                    <label for="length">Course Lenght in days</label>
+                    <input type="text" id="length" name="length" readonly>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="button"> Add this course</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+</body>
+
+</html>
