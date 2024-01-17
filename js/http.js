@@ -22,7 +22,6 @@ export default class HttpClient {
                 throw new Error(`${response.status} ${response.statusText}`);
             }
         } catch (error) {
-            console.log(error);
             throw new Error(`Something went wrong in the GET-Method: ${error}`);
         }
     }
@@ -51,9 +50,20 @@ export default class HttpClient {
         }
     }
 
+        // Method to delete data from the local JSON-server
+        async delete() {
+            try {
+                const response = await fetch(this.#url, {
+                    method: 'DELETE',
+                });
+            } catch (error) {
+                throw new Error(`Something went wrong in the DELETE-Method: ${error}`);
+            }
+        }
+
     // Method to update data in the local JSON-server
     async update(data) {
-        try {   // Read up on if I should use (`${this.#url}/${data.id}`) for this for a more direct approach
+        try {   
             const response = await fetch(this.#url, {
                 method: 'PUT',
                 headers: {
@@ -69,20 +79,7 @@ export default class HttpClient {
                 throw new Error(`${response.status} ${response.statusText}`);
             }
         } catch (error) {
-            console.log(error);
             throw new Error(`Something went wrong in the UPDATE-Method: ${error}`);
-        }
-    }
-
-    // Method to delete data from the local JSON-server
-    async delete() {
-        try {
-            const response = await fetch(this.#url, {
-                method: 'DELETE',
-            });
-        } catch (error) {
-            console.log(error);
-            throw new Error(`Something went wrong in the DELETE-Method: ${error}`);
         }
     }
 }

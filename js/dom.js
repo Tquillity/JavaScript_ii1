@@ -26,23 +26,21 @@ const createImage = (imageUrl, courseId, imageAlt) => {         // function to d
 const createCourseInfo = (course) => {                          // function to create course info
     const paragraph = document.createElement('p');              // create paragraph element
     paragraph.appendChild(                                      // append text to paragraph element
-        document.createTextNode(`${course.title} ${course.deliveryMethod}`)     // add text to paragraph element from json-file
+        document.createTextNode(`${course.title} ${course.delivery}`)     // add text to paragraph element from json-file
     );
 
     return paragraph;
 };
 
 const createCourseList = (courses, element) => {
-    console.log("Inside createCourseList - courses:", courses);
-    console.log("Inside createCourseList - element:", element);
     courses.forEach((course) => {
         const container = createDiv();  // ! Läs på: Ska jag ha argument i createDiv() ex. class
         container.setAttribute('courseId', course.id);
-        container.appendChild(createSpan(course.title));
-        container.appendChild(createSpan(course.deliveryMethod));
-        container.appendChild(createSpan(course.length));           // ! Läs på: antal dagar genererades inte korrekt, läs på om hur jag tar fram antal dagar dynamiskt
-        container.appendChild(createSpan(course.startDate));        // ! baserat på start och slutdatum. 
-        container.appendChild(createSpan(course.endDate));
+        container.appendChild(createSpan(`Course: ${course.title}`));
+        container.appendChild(createSpan(course.delivery));           
+        container.appendChild(createSpan(`Starting date: ${course.startDate}`));        // ! Läs på: antal dagar genererades inte korrekt, läs på om hur jag tar fram antal dagar dynamiskt
+        container.appendChild(createSpan(`Ending date: ${course.endDate}`));          // ! baserat på start och slutdatum. 
+        container.appendChild(createSpan(`Course length:${course.automatedDaysCount} work days (including weekends)`));
 
         element.appendChild(container);
     });

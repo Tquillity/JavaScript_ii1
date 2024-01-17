@@ -36,22 +36,19 @@
                     <input type="text" id="reg" name="reg" placeholder="Course Registration Number">
                 </div>
                 <div class="form-group">
-                    <label for="deliveryMethod">Course Delivery Method</label>
-                    <select id="deliveryMethod" name="deliveryMethod">
-                        <option value="Remote">Online</option>
-                        <option value="On-Site">Classroom</option>
-                        <option value="Both">Blended</option>
+                    <label for="delivery">Course Delivery Method</label>
+                    <select id="delivery" name="delivery">
+                        <option value="Online">Online</option>
+                        <option value="Classroom">Classroom</option>
+                        <option value="Blended">Blended</option>
                     </select>
                 </div>
                 <div class="form-group">
                     <label for="imageUrl">Course Image URL</label>
                     <input type="text" id="imageUrl" name="imageUrl" value="adress here..."
-                        placeholder="ange namn på bild här..."> <!-- ! Byt ut mot en bilduppladdningssida -->
+                        placeholder="ange namn på bild här...">
                 </div>
-                <!-- ! Byt ut om jag har tid över till ett JavaScript-baserat date picker library -->
-                <!-- ! för att garantera en bättre lösning överolika browsers, samt att detta är en JS-kurs =P -->
-                <!-- ! Ex. jQuery UI DatePicker, Pikaday, or Flatpickr. -->
-                <div class="form-group">
+                <div class="form-group"> <!-- ! Byt ut om jag har tid över till ett JavaScript-baserat date picker library för att garantera en bättre lösning överolika browsers, samt att detta är en JS-kurs =P Ex. jQuery UI DatePicker, Pikaday, or Flatpickr. -->
                     <label for="startDate">Course Starting Date</label>
                     <input type="date" id="startDate" name="startDate" placeholder="Course Starting Date">
                 </div>
@@ -60,11 +57,12 @@
                     <input type="date" id="endDate" name="endDate" placeholder="Course Ending Date">
                 </div>
                 <div class="form-group">
-                    <label for="length">Course Lenght in days</label>
-                    <input type="text" id="length" name="length" readonly>
-                </div>
+                    <label for="automatedDaysCount">Automated Days Count</label>
+                    <input type="text" id="automatedDaysCount" name="automatedDaysCount" readonly>
+                </div>                
+                
                 <div class="form-group">
-                    <button type="submit" class="button"> Add this course</button>
+                    <button type="submit" class="button"> Uppdate course info </button>
                 </div>
             </form>
         </section>

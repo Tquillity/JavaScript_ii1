@@ -1,180 +1,164 @@
-{ 
-    "courses": [
-        {
-            "id": 1,
-            "title": "Big Data Analytics",
-            "reg": "CS100",
-            "length": 35,
-            "deliveryMethod": "On-site",
-            "imageUrl": "image_link_here",
-            "imageAlt": "image description here",
-            "startDate": "2024-09-05",
-            "endDate": "2024-11-20"
-        },
-        {
-            "id": 2,
-            "title": "Back-End Development with Node.js",
-            "reg": "CS101",
-            "length": 51,
-            "deliveryMethod": "Remote",
-            "imageUrl": "image_link_here",
-            "imageAlt": "image description here",
-            "startDate": "2024-04-27",
-            "endDate": "2024-09-10"
-        },
-        {
-            "id": 3,
-            "title": "Machine Learning with Python",
-            "reg": "CS102",
-            "length": 13,
-            "deliveryMethod": "Both",
-            "imageUrl": "image_link_here",
-            "imageAlt": "image description here",
-            "startDate": "2024-07-13",
-            "endDate": "2024-10-30"
-        },
-        {
-            "id": 4,
-            "title": "Introduction to Python Programming",
-            "reg": "CS103",
-            "length": 16,
-            "deliveryMethod": "Both",
-            "imageUrl": "image_link_here",
-            "imageAlt": "image description here",
-            "startDate": "2024-08-12",
-            "endDate": "2024-10-08"
-        },
-        {
-            "id": 5,
-            "title": "Mobile App Development with Flutter",
-            "reg": "CS104",
-            "length": 23,
-            "deliveryMethod": "Remote",
-            "imageUrl": "image_link_here",
-            "imageAlt": "image description here",
-            "startDate": "2024-01-10",
-            "endDate": "2024-11-08"
-        },
-        {
-            "id": 6,
-            "title": "Back-End Development with Node.js",
-            "reg": "CS105",
-            "length": 29,
-            "deliveryMethod": "Remote",
-            "imageUrl": "image_link_here",
-            "imageAlt": "image description here",
-            "startDate": "2024-09-21",
-            "endDate": "2024-06-01"
-        },
-        {
-            "id": 7,
-            "title": "Database Management with SQL",
-            "reg": "CS106",
-            "length": 20,
-            "deliveryMethod": "Both",
-            "imageUrl": "image_link_here",
-            "imageAlt": "image description here",
-            "startDate": "2024-04-23",
-            "endDate": "2024-11-27"
-        },
-        {
-            "id": 8,
-            "title": "Front-End Development with React",
-            "reg": "CS107",
-            "length": 42,
-            "deliveryMethod": "On-site",
-            "imageUrl": "image_link_here",
-            "imageAlt": "image description here",
-            "startDate": "2024-02-15",
-            "endDate": "2024-04-28"
-        },
-        {
-            "id": 9,
-            "title": "Cybersecurity Fundamentals",
-            "reg": "CS108",
-            "length": 30,
-            "deliveryMethod": "Remote",
-            "imageUrl": "image_link_here",
-            "imageAlt": "image description here",
-            "startDate": "2024-06-10",
-            "endDate": "2024-07-10"
-        },
-        {
-            "id": 10,
-            "title": "Game Development with Unity",
-            "reg": "CS109",
-            "length": 45,
-            "deliveryMethod": "Both",
-            "imageUrl": "image_link_here",
-            "imageAlt": "image description here",
-            "startDate": "2024-05-01",
-            "endDate": "2024-06-15"
-        },
-        {
-            "id": 11,
-            "title": "UI/UX Design Principles",
-            "reg": "CS110",
-            "length": 60,
-            "deliveryMethod": "On-site",
-            "imageUrl": "image_link_here",
-            "imageAlt": "image description here",
-            "startDate": "2024-03-20",
-            "endDate": "2024-05-19"
-        },
-        {
-            "id": 12,
-            "title": "Software Testing and QA",
-            "reg": "CS111",
-            "length": 25,
-            "deliveryMethod": "Remote",
-            "imageUrl": "image_link_here",
-            "imageAlt": "image description here",
-            "startDate": "2024-08-05",
-            "endDate": "2024-08-30"
-        },
-        {
-            "id": 13,
-            "title": "Blockchain Basics",
-            "reg": "CS112",
-            "length": 18,
-            "deliveryMethod": "Both",
-            "imageUrl": "image_link_here",
-            "imageAlt": "image description here",
-            "startDate": "2024-07-01",
-            "endDate": "2024-07-19"
-        },
-        {
-            "id": 14,
-            "title": "Big Data Analytics",
-            "reg": "CS100",
-            "length": 35,
-            "deliveryMethod": "On-site",
-            "imageUrl": "image_link_here",
-            "imageAlt": "image description here",
-            "startDate": "2024-09-05",
-            "endDate": "2024-11-20"
-        },
-        {
-            "id": 15,
-            "title": "Back-End Development with Node.js",
-            "reg": "CS101",
-            "length": 51,
-            "deliveryMethod": "Remote",
-            "imageUrl": "image_link_here",
-            "imageAlt": "image description here",
-            "startDate": "2024-04-27",
-            "endDate": "2024-09-10"
-        },
-        {
-            "id": 16,
-            "title": "Machine Learning with Python",
-            "reg": "CS102",
-            "length": 13,
-            "deliveryMethod": "Both",
-            "imageUrl": "image_link_here",
-            "imageAlt": "image description here",
-            "startDate": "2024-07-13",
-            "endDate": "2024-10-30"
-        }
-    ]
+{
+  "courses": [
+    {
+      "title": "Adding a testcourse",
+      "reg": "TEST101",
+      "delivery": "Classroom",
+      "imageUrl": "image_link_here",
+      "startDate": "2024-02-01",
+      "endDate": "2024-02-29",
+      "automatedDaysCount": "21 (29)",
+      "id": 1
+    },
+    {
+      "title": "Back-End Development with Node.js",
+      "reg": "CS101",
+      "delivery": "Online",
+      "imageUrl": "image_link_here",
+      "startDate": "2024-04-27",
+      "endDate": "2024-09-10",
+      "automatedDaysCount": "97 (137)",
+      "id": 2
+    },
+    {
+      "title": "Machine Learning with Python",
+      "reg": "CS102",
+      "delivery": "Blended",
+      "imageUrl": "image_link_here",
+      "startDate": "2024-07-13",
+      "endDate": "2024-10-30",
+      "automatedDaysCount": "77 (110)",
+      "id": 3
+    },
+    {
+      "title": "Introduction to Python Programming",
+      "reg": "CS103",
+      "delivery": "Blended",
+      "imageUrl": "image_link_here",
+      "startDate": "2024-08-12",
+      "endDate": "2024-10-08",
+      "automatedDaysCount": "42 (58)",
+      "id": 4
+    },
+    {
+      "title": "Mobile App Development with Flutter",
+      "reg": "CS104",
+      "delivery": "Online",
+      "imageUrl": "image_link_here",
+      "startDate": "2024-01-10",
+      "endDate": "2024-11-08",
+      "automatedDaysCount": "218 (304)",
+      "id": 5
+    },
+    {
+      "title": "Back-End Development with Node.js",
+      "reg": "CS105",
+      "delivery": "Online",
+      "imageUrl": "image_link_here",
+      "startDate": "2024-09-21",
+      "endDate": "2024-06-01",
+      "automatedDaysCount": "Starting date needs to be before end date",
+      "id": 6
+    },
+    {
+      "title": "Database Management with SQL",
+      "reg": "CS106",
+      "delivery": "Blended",
+      "imageUrl": "image_link_here",
+      "startDate": "2024-04-23",
+      "endDate": "2024-11-27",
+      "automatedDaysCount": "156 (219)",
+      "id": 7
+    },
+    {
+      "title": "Front-End Development with React",
+      "reg": "CS107",
+      "delivery": "Classroom",
+      "imageUrl": "image_link_here",
+      "startDate": "2024-02-15",
+      "endDate": "2024-04-28",
+      "automatedDaysCount": "52 (74)",
+      "id": 8
+    },
+    {
+      "title": "Cybersecurity Fundamentals",
+      "reg": "CS108",
+      "delivery": "Online",
+      "imageUrl": "image_link_here",
+      "startDate": "2024-06-10",
+      "endDate": "2024-07-10",
+      "automatedDaysCount": "23 (31)",
+      "id": 9
+    },
+    {
+      "title": "Game Development with Unity",
+      "reg": "CS109",
+      "delivery": "Blended",
+      "imageUrl": "image_link_here",
+      "startDate": "2024-05-01",
+      "endDate": "2024-06-15",
+      "automatedDaysCount": "33 (46)",
+      "id": 10
+    },
+    {
+      "title": "UI/UX Design Principles",
+      "reg": "CS110",
+      "delivery": "Classroom",
+      "imageUrl": "image_link_here",
+      "startDate": "2024-03-20",
+      "endDate": "2024-05-19",
+      "automatedDaysCount": "43 (61)",
+      "id": 11
+    },
+    {
+      "title": "Software Testing and QA",
+      "reg": "CS111",
+      "delivery": "Online",
+      "imageUrl": "image_link_here",
+      "startDate": "2024-08-05",
+      "endDate": "2024-08-30",
+      "automatedDaysCount": "20 (26)",
+      "id": 12
+    },
+    {
+      "title": "Blockchain Basics",
+      "reg": "CS112",
+      "delivery": "Blended",
+      "imageUrl": "image_link_here",
+      "startDate": "2024-07-01",
+      "endDate": "2024-07-19",
+      "automatedDaysCount": "15 (19)",
+      "id": 13
+    },
+    {
+      "title": "Big Data Analytics",
+      "reg": "CS100",
+      "delivery": "Classroom",
+      "imageUrl": "image_link_here",
+      "startDate": "2024-09-05",
+      "endDate": "2024-11-20",
+      "automatedDaysCount": "54 (77)",
+      "id": 14
+    },
+    {
+      "title": "Back-End Development with Node.js",
+      "reg": "CS101",
+      "delivery": "Online",
+      "imageUrl": "image_link_here",
+      "startDate": "2024-04-27",
+      "endDate": "2024-09-10",
+      "automatedDaysCount": "97 (137)",
+      "id": 15
+    },
+    {
+      "title": "Machine Learning with Python",
+      "reg": "CS102",
+      "delivery": "Blended",
+      "imageUrl": "image_link_here",
+      "startDate": "2024-07-13",
+      "endDate": "2024-10-30",
+      "automatedDaysCount": "77 (110)",
+      "id": 16
+    }
+  ]
 }

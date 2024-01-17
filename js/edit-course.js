@@ -1,6 +1,6 @@
 import HttpClient from "./http.js";
 import { convertFormDataToJson } from "./utilities.js";
-import { calculateCourseLength } from "./dateFunction.js";
+import { calculateCourseDays } from "./dateFunction.js";
 
 const form = document.querySelector('#updateCourseForm');
 const deleteButton = document.querySelector('#deleteButton');
@@ -12,7 +12,7 @@ const initpage = async () => {
     getCourse(courseId);
 };
 
-const getCourse = async(id) => {
+const getCourse = async (id) => {
     const url = `http://localhost:3000/courses/${id}`;
     const http = new HttpClient(url);
     const course = await http.get();
@@ -23,10 +23,14 @@ const loadDataToForm = (course) => {
     const entries = new URLSearchParams(course).entries();
     for (let [key, value] of entries) {
         if (key !== 'id') {
+            console.log(key, value);
+            console.log(form.elements[key]);
             const input = form.elements[key];
             input.value = value;
         }
     }
+
+    calculateCourseDays();
 };
 
 const updateCourse = async (event) => {
@@ -38,7 +42,8 @@ const updateCourse = async (event) => {
     const url = `http://localhost:3000/courses/${courseId}`;
     const http = new HttpClient(url);
     await http.update(obj);
-    location.href = './index.html';
+    
+    location.href = './admin-index.html';
 };
 
 const deleteCourse = async () => {
@@ -46,14 +51,13 @@ const deleteCourse = async () => {
     const http = new HttpClient(url);
     await http.delete();
 
-    location.href = './index.html';
+    location.href = './admin-index.html';
 };
 
 document.addEventListener('DOMContentLoaded', initpage);
+document.getElementById('startDate').addEventListener('change', calculateCourseDays); // When either of the dates are changed, the function calculateCourseDays is called
+document.getElementById('endDate').addEventListener('change', calculateCourseDays);   // to calculate the number of days between the dates and the number of working days.
+                                                                                      // it also updates the form field "automatedDaysCount" with the number of days.
 form.addEventListener('submit', updateCourse);
 deleteButton.addEventListener('click', deleteCourse);
-document.addEventListener('DOMContentLoaded', async () => {
-    initpage();
-    document.getElementById('startDate').addEventListener('change', calculateCourseLength);
-    document.getElementById('endDate').addEventListener('change', calculateCourseLength);
-});
+

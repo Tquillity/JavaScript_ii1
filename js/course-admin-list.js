@@ -28,7 +28,7 @@ const selectedCourse = (event) => {
     }
 
     // navigate to edit-courses.html
-    location.href = `edit-courses.html?id=${courseId}`;
+    location.href = `edit-course.html?id=${courseId}`;
 };
 
 document.addEventListener('DOMContentLoaded', initPage);
