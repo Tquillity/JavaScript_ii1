@@ -46,6 +46,19 @@ const updateCourse = async (event) => {
     location.href = './admin-index.html';
 };
 
+const createCourse = async (event) => {
+    event.preventDefault();
+
+    const course = new FormData(form);
+    const obj = convertFormDataToJson(course);
+
+    const url = `http://localhost:3000/courses`;
+    const http = new HttpClient(url);
+    await http.add(obj);
+    
+    location.href = './admin-index.html'; 
+}
+
 const deleteCourse = async () => {
     const url = `http://localhost:3000/courses/${courseId}`;
     const http = new HttpClient(url);
@@ -58,6 +71,13 @@ document.addEventListener('DOMContentLoaded', initpage);
 document.getElementById('startDate').addEventListener('change', calculateCourseDays); // When either of the dates are changed, the function calculateCourseDays is called
 document.getElementById('endDate').addEventListener('change', calculateCourseDays);   // to calculate the number of days between the dates and the number of working days.
                                                                                       // it also updates the form field "automatedDaysCount" with the number of days.
-form.addEventListener('submit', updateCourse);
+
+document.getElementById('clearFormButton').addEventListener('click', function() {     // When the clear form button is clicked, the form is reset to placeholder values.
+document.getElementById('updateCourseForm').reset();
+});
+
+// form.addEventListener('submit', updateCourse);
+editButton.addEventListener('click', updateCourse);
+createButton.addEventListener('click', createCourse);
 deleteButton.addEventListener('click', deleteCourse);
 

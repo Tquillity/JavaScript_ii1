@@ -22,11 +22,10 @@
             <h1>Edit Courses</h1>
             <button id="backButton" class="button" onclick="location.href='admin-index.html'">Back to Admin Page</button>
 
-            <div class="button-container">
-                <button id="deleteButton" class="button">Delete the Course</button>
-            </div>
-
             <form id="updateCourseForm">
+                <div class="form-group">
+                    <button type="button" id="clearFormButton" class="button">Empty the form</button>
+                </div>
                 <div class="form-group">
                     <label for="title">Course Title</label>
                     <input type="text" id="title" name="title" placeholder="Course Name">
@@ -62,7 +61,12 @@
                 </div>                
                 
                 <div class="form-group">
-                    <button type="submit" class="button"> Uppdate course info </button>
+                    <button type="submit" id="editButton" class="button">Uppdate This Course</button>
+                </div>
+                <div class="form-group">
+                    <button type="submit" id="createButton" class="button">Create New Course</button>
+                </div class="form-group">
+                    <button typre="submit" id="deleteButton" class="button">Delete Course</button>
                 </div>
             </form>
         </section>

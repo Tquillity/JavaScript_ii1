@@ -1,16 +1,6 @@
 {
   "courses": [
     {
-      "title": "Adding a testcourse",
-      "reg": "TEST101",
-      "delivery": "Classroom",
-      "imageUrl": "image_link_here",
-      "startDate": "2024-02-01",
-      "endDate": "2024-02-29",
-      "automatedDaysCount": "21 (29)",
-      "id": 1
-    },
-    {
       "title": "Back-End Development with Node.js",
       "reg": "CS101",
       "delivery": "Online",
@@ -159,6 +149,16 @@
       "endDate": "2024-10-30",
       "automatedDaysCount": "77 (110)",
       "id": 16
+    },
+    {
+      "title": "Back-End Development with Node.js",
+      "reg": "CS101 999",
+      "delivery": "Classroom",
+      "imageUrl": "image_link_here",
+      "startDate": "2024-04-27",
+      "endDate": "2024-09-10",
+      "automatedDaysCount": "97 (137)",
+      "id": 17
     }
   ]
 }

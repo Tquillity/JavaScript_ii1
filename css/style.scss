@@ -12,3 +12,18 @@
 
 @import "./sections/index.scss";
 @import "./sections/admin-index.scss";
+
+#deleteButton {
+    background-color: red;
+    color: white;
+}
+
+#createButton {
+    background-color: green;
+    color: white;
+}
+
+#editButton {
+    background-color: blue;
+    color: white;
+}
