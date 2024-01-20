@@ -2,13 +2,22 @@
 // DOM manipulation functions
 // ================================================
 
-const createCard = (course) => {                                // function to create card
-    const div = document.createElement('div');                  // create div element
-    div.classList.add('course-image');                          // add class to div element
-    div.appendChild(createImage(course.imageUrl, course.id)); // append image to div element
-    div.appendChild(createCourseInfo(course));
+const createCard = (course, cardClassName) => {                                // function to create card
+    const courseCard = document.createElement('div');                  // create div element
+    
+    // if function to allow me to name classes as card is created to allow for
+    // more individual styling (user/admin)
+    if(cardClassName) {
+        courseCard.classList.add(cardClassName);
+    } else {
+    courseCard.classList.add('default-container');
+    }   
+    courseCard.appendChild(createImage(course.imageUrl, course.id)); // append image to div element
+    courseCard.appendChild(createCourseInfo(course));
+    courseCard.appendChild(createSpan(`Starting date: ${course.startDate}`));        // ! Läs på: antal dagar genererades inte korrekt, läs på om hur jag tar fram antal dagar dynamiskt
+    courseCard.appendChild(createSpan(`Ending date: ${course.endDate}`));          // ! baserat på start och slutdatum.
 
-    return div;                                                 // return div element to DOM to make visible in HTML
+    return courseCard;                                                 // return div element to DOM to make visible in HTML
 };
 
 const createImage = (imageUrl, courseId, imageAlt) => {         // function to dynamically create image
