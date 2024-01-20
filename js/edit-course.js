@@ -1,6 +1,7 @@
 import HttpClient from "./http.js";
 import { convertFormDataToJson } from "./utilities.js";
 import { calculateCourseDays } from "./dateFunction.js";
+import { initHeader } from "./header.js";
 
 const form = document.querySelector('#updateCourseForm');
 const deleteButton = document.querySelector('#deleteButton');

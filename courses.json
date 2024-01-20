@@ -1,10 +1,10 @@
 {
   "courses": [
     {
-      "title": "Back-End Development with Node.js",
-      "reg": "CS101",
-      "delivery": "Online",
-      "imageUrl": "image_link_here",
+      "title": "System Development 101",
+      "reg": "SD101",
+      "delivery": "Classroom",
+      "imageUrl": "system.png",
       "startDate": "2024-04-27",
       "endDate": "2024-09-10",
       "automatedDaysCount": "97 (137)",

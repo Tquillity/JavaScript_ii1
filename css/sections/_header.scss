@@ -1,0 +1,15 @@
+header {
+    background-color: pink;
+    color: brown;
+    padding: pxToRem(10);
+    text-align: center;
+    margin-bottom: pxToRem(10);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
+header ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+}

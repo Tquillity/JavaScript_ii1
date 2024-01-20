@@ -1,7 +1,11 @@
 import HttpClient from "./http.js";
 import { createCourseList } from "./dom.js";
+import { initHeader } from "./header.js";
 
 const initPage = async() => {
+    // Initiating the header
+    initHeader();
+    
     const url = 'http://localhost:3000/courses';
     const http = new HttpClient(url);
 
