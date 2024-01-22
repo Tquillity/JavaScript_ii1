@@ -2,6 +2,7 @@ import { handleLoginSubmit } from './log-in.js';
 
 export function initHeader() {
     const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
+    const isAdmin = localStorage.getItem('isAdmin') === 'true';
     const headerNav = `
     <nav class="headerNav">
         <div class="container">
@@ -20,7 +21,12 @@ export function initHeader() {
                         </form>
                     `
                 }
-                <li class="menu-item nav-admin"><a href="admin-index.html">--==||  Admin  ||==--</a></li>
+                ${isAdmin ?
+                    `<li class="menu-item nav-admin"><a href="admin-index.html">--==||  Admin  ||==--</a></li>` :
+                    ``
+                }    
+
+
             </ul>
         </div>
     </nav>
