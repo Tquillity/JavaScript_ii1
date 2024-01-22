@@ -68,7 +68,7 @@ const createSpan = (text) => {                                  // function to c
 
 const addImageClickHandler = (images) => {                      // function creates a click event handler for each image in the array
     images.forEach((image) => {
-        //const src = image.getAttribute('src');                // not needed since the images are loaded from local folder
+        const src = image.getAttribute('src');                // not needed since the images are loaded from local folder
         const courseId = image.getAttribute('id');              // get the id from the image to be used in location.href
 
         image.addEventListener('click', () => {
