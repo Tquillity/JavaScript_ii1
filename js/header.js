@@ -1,12 +1,13 @@
 export function initHeader() {
     const headerNav = ` 
     <nav class="headerNav">
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="courses.html">Courses</a></li>
-            <li><a href="admin-index.html">Admin</a></li>
-            <li><a href="login.html">Login</a></li>
-        </ul>
+        <div class="container"
+            <ul class="menu">
+                <li class="menu-item"><a href="index.html">Home</a></li>
+                <li class="menu-item"><a href="courses.html">Courses</a></li>
+                <li class="menu-item"><a href="admin-index.html">Admin</a></li>
+                <li class="menu-item"><a href="login.html">Login</a></li>
+            </ul>
     </nav>
 `;
 
