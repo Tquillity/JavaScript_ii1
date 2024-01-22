@@ -49,7 +49,9 @@ const createCourseList = (courses, element) => {
         container.appendChild(createSpan(course.delivery));           
         container.appendChild(createSpan(`Starting date: ${course.startDate}`));        // ! Läs på: antal dagar genererades inte korrekt, läs på om hur jag tar fram antal dagar dynamiskt
         container.appendChild(createSpan(`Ending date: ${course.endDate}`));          // ! baserat på start och slutdatum. 
-        container.appendChild(createSpan(`Course length:${course.automatedDaysCount} work days (including weekends)`));
+        container.appendChild(createSpan(`Course length:${course.automatedDaysCount}`)); // work days (including weekends)`)); // ! replace with icon for pop-up for better graphical clarity
+
+
 
         element.appendChild(container);
     });
