@@ -2,7 +2,20 @@ import HttpClient from "./http.js";
 import { createCourseList } from "./dom.js";
 import { initHeader } from "./header.js";
 
+function checkAdminLogin() {
+    const isLoggedIn = localStorage.getItem('isLoggedIn');
+    const isAdmin = localStorage.getItem('isAdmin');
+
+    if (isLoggedIn !== 'true' || isAdmin !== 'true') {
+        window.location.href = 'index.html';
+        alert('Please log in as admin to access this page.');
+    }
+}
+
 const initPage = async() => {
+
+    // check if user is logged in as admin
+    checkAdminLogin();
     // Initiating the header
     initHeader();
     
