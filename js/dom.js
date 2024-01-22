@@ -51,8 +51,6 @@ const createCourseList = (courses, element) => {
         container.appendChild(createSpan(`Ending date: ${course.endDate}`));          // ! baserat på start och slutdatum. 
         container.appendChild(createSpan(`Course length:${course.automatedDaysCount}`)); // work days (including weekends)`)); // ! replace with icon for pop-up for better graphical clarity
 
-
-
         element.appendChild(container);
     });
 };
