@@ -1,6 +1,15 @@
+.header-container {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: pxToRem(10);
+    margin-bottom: pxToRem(10);
+    max-width: $pageWidthDesk;
+    position: relative;
+}
+
 header {
-    background-color: pink;
-    color: brown;
+    background-color: $header-background-color;
+    color: $light-text-color;
     padding: pxToRem(10);
     text-align: center;
     margin: 0 auto;
@@ -15,15 +24,25 @@ header ul {
 }
 
 .loginForm {
-    max-height: 0;
+    display: flex;
+    justify-content: space-between;
+    gap: pxToRem(10);
+    position: absolute;
+    top: 100%; // Position it right below the header
+    right: 0; // Align to the right side of the screen
+    z-index: 10; // Ensure it overlays content below the header
+    background: $card-background-color; 
+    border: 1px solid #ccc;
+    padding: pxToRem(10);
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1); // drop shadow effect
+    width: auto;
+    transition: opacity 0.5s, visibility 0.5s;
     opacity: 0;
     visibility: hidden;
     overflow: hidden;
-    transition: opacity 0.5s, max-height 0.5s, visibility 0.5s ease-in-out;
 }
 
 .loginForm:not(.hidden) {
-    max-height: pxToRem(100);
     opacity: 1;
     visibility: visible;
 }

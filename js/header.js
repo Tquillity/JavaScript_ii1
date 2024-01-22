@@ -5,7 +5,7 @@ export function initHeader() {
     const isAdmin = localStorage.getItem('isAdmin') === 'true';
     const headerNav = `
     <nav class="headerNav">
-        <div class="container">
+        <div class="header-container">
             <ul class="menu">
                 <li class="menu-item"><a href="index.html">Home</a></li>
                 <li class="menu-item"><a href="courses.html">Courses</a></li>

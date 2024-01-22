@@ -22,7 +22,7 @@ async function handleLoginSubmit(event) {
             console.log('isLoggedin', localStorage.getItem('isLoggedIn'));
             localStorage.setItem('isLoggedIn', 'true');
             localStorage.setItem('isAdmin', 'false');
-            window.location.href = 'index.html';
+            window.location.href = 'courses.html';
         } else if (admin){
             console.log('login successful', admin);
             console.log('isLoggedin', localStorage.getItem('isLoggedIn'));
