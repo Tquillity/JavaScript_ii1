@@ -2,7 +2,7 @@ import { createCard, addImageClickHandler } from "./dom.js";
 import HttpClient from "./http.js";
 import { initHeader } from "./header.js";
 
-const coursePortfolio = document.querySelector('#courses');
+const coursePortfolio = document.querySelector('#courses-gallery');
 
 async function initPage() {
     // Initiating the header
@@ -16,7 +16,7 @@ async function initPage() {
         coursePortfolio.appendChild(createCard(course, 'user-page-card'))
     );
 
-    const images = document.querySelectorAll('.course-image img');
+    const images = document.querySelectorAll('.user-page-card img');
     addImageClickHandler(images);
 }
 

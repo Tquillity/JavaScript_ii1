@@ -1,0 +1,21 @@
+#courses-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-around;
+    gap: pxToRem(16);
+}
+
+.user-page-card {
+    border:solid pxToRem(1) $card-border-color;
+    background: $card-background-color;
+    min-width: pxToRem(250);
+    border-radius: pxToRem(8);
+}
+
+.user-page-card img {
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+    width: 100%;
+    cursor: pointer;
+  }
+  
