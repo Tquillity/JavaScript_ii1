@@ -2,6 +2,9 @@ import HttpClient from "./http.js";
 import { createCourseList } from "./dom.js";
 import { initHeader } from "./header.js";
 
+
+// I no logger show the admin buttons for people who are not logged in as admin
+// But i keep this in case someone has the link to the page :)
 function checkAdminLogin() {
     const isLoggedIn = localStorage.getItem('isLoggedIn');
     const isAdmin = localStorage.getItem('isAdmin');

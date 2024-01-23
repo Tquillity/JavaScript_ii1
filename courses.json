@@ -185,6 +185,14 @@
       "password": "1111",
       "userName": "mikael.sundh@gmail.com",
       "id": 3
+    },
+    {
+      "firstName": "angela",
+      "lastName": "heitmann",
+      "email": "a.h.heitmann@gmail.com",
+      "password": "password",
+      "userName": "a.h.heitmann@gmail.com",
+      "id": 4
     }
   ],
   "adminUsers": [

@@ -22,7 +22,9 @@ export function initHeader() {
                     `
                 }
                 ${isAdmin ?
-                    `<li class="menu-item nav-admin"><a href="admin-index.html">--==||  Admin  ||==--</a></li>` :
+                    `<li class="menu-item nav-admin"><a href="admin-index.html">Administration ===> Courses</a></li>
+                    <li class="menu-item nav-admin"><a href="admin-list-customers.html">Customers</a></li>
+                    <li class="menu-item nav-admin"><a href="admin-users.html"></a>Users <===</li>` :
                     ``
                 }    
 
@@ -55,6 +57,7 @@ function attachEventListeners() {
         logoutLink.addEventListener('click', (e) => {
             e.preventDefault();
             localStorage.removeItem('isLoggedIn');
+            localStorage.removeItem('isAdmin');
             window.location.href = 'index.html';
         });
     }

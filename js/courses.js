@@ -13,7 +13,7 @@ async function initPage() {
     courses.forEach((course) => 
         //const userPageCard = createCard(course, 'user-page-card');
         //coursePortfolio.appendChild(userPageCard);
-        coursePortfolio.appendChild(createCard(course, 'user-page-card'))
+        coursePortfolio.appendChild(createCard(course, 'user-page-card')) // This is the same as the two lines above
     );
 
     const images = document.querySelectorAll('.user-page-card img');

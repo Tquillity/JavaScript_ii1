@@ -14,8 +14,8 @@ const createCard = (course, cardClassName) => {                                /
     }   
     courseCard.appendChild(createImage(course.imageUrl, course.id)); // append image to div element
     courseCard.appendChild(createCourseInfo(course));
-    courseCard.appendChild(createSpan(`Starting date: ${course.startDate}`));        // ! Läs på: antal dagar genererades inte korrekt, läs på om hur jag tar fram antal dagar dynamiskt
-    courseCard.appendChild(createSpan(`Ending date: ${course.endDate}`));          // ! baserat på start och slutdatum.
+    courseCard.appendChild(createSpan(`Start date: ${course.startDate}`));        
+    courseCard.appendChild(createSpan(`End date: ${course.endDate}`));          
 
     return courseCard;                                                 // return div element to DOM to make visible in HTML
 };
@@ -35,7 +35,7 @@ const createImage = (imageUrl, courseId, imageAlt) => {         // function to d
 const createCourseInfo = (course) => {                          // function to create course info
     const paragraph = document.createElement('p');              // create paragraph element
     paragraph.appendChild(                                      // append text to paragraph element
-        document.createTextNode(`${course.title} ${course.delivery}`)     // add text to paragraph element from json-file
+        document.createTextNode(`${course.title} ${course.delivery}`),
     );
 
     return paragraph;
@@ -78,7 +78,7 @@ const addImageClickHandler = (images) => {                      // function crea
 };
 
 
-// * createCard imported to: 
-// * createCourseList imported to:
-// * addImageClickHandler imported to:
+// * createCard imported to: courses.js
+// * addImageClickHandler imported to: courses.js
+// * createCourseList imported to: admin-index.js
 export { createCard, addImageClickHandler, createCourseList}
