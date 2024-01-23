@@ -1,0 +1,26 @@
+// interactionHandler.js - Handles interactions like clicks on course cards
+
+/**
+ * Attaches a click event listener to elements matching a selector within a container,
+ * redirecting to a specified URL, appending the element's data attribute as a query parameter.
+ * @param {string} containerSelector - The selector for the container of clickable elements.
+ * @param {string} clickableSelector - The selector for the clickable elements.
+ * @param {string} dataAttribute - The data attribute name to use in the redirect URL.
+ * @param {string} baseUrl - The base URL to redirect to.
+ */
+const setupClickableElements = (containerSelector, clickableSelector, dataAttribute, baseUrl) => {
+    const container = document.querySelector(containerSelector);
+    if (!container) return; // Exit if container is not found
+
+    container.addEventListener('click', event => {
+        const target = event.target.closest(clickableSelector);
+        if (!target) return; // Exit if the click is not on a target element
+
+        const idValue = target.getAttribute(dataAttribute);
+        if (idValue) {
+            window.location.href = `${baseUrl}?id=${idValue}`;
+        }
+    });
+};
+
+export { setupClickableElements };

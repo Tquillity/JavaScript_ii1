@@ -1,7 +1,6 @@
-import HttpClient from "./http.js";
-import { createCourseList } from "./dom.js";
-import { initHeader } from "./header.js";
-
+import HttpClient from "../utilities/http.js";
+import { createCourseList } from "../lib/dom.js";
+import { initHeader } from "../utilities/header.js";
 
 // I no logger show the admin buttons for people who are not logged in as admin
 // But i keep this in case someone has the link to the page :)

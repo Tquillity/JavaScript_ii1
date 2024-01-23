@@ -1,6 +1,6 @@
-import { createCard, addImageClickHandler } from "./dom.js";
-import HttpClient from "./http.js";
-import { initHeader } from "./header.js";
+import { createCard, addImageClickHandler } from "../lib/dom.js";
+import HttpClient from "../utilities/http.js";
+import { initHeader } from "../utilities/header.js";
 
 const coursePortfolio = document.querySelector('#courses-gallery');
 

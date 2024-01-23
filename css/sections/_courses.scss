@@ -5,14 +5,15 @@
     gap: pxToRem(16);
 }
 
-.user-page-card {
+.dynamic-card {
     border:solid pxToRem(1) $card-border-color;
     background: $card-background-color;
-    min-width: pxToRem(250);
+    min-width: pxToRem(300);
     border-radius: pxToRem(8);
+    cursor: pointer;
 }
 
-.user-page-card img {
+.course-card img {
     border-top-right-radius: 0.5rem;
     border-top-left-radius: 0.5rem;
     width: 100%;

@@ -1,6 +1,6 @@
-import { convertFormDataToJson } from './utilities.js';
-import HttpClient from './http.js';
-import { initHeader } from './header.js';
+import { convertFormDataToJson } from '../utilities/utilities.js';
+import HttpClient from '../utilities/http.js';
+import { initHeader } from '../utilities/header.js';
 
 const httpClient = new HttpClient('http://localhost:3000/users');
 

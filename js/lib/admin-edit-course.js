@@ -1,7 +1,7 @@
-import HttpClient from "./http.js";
-import { convertFormDataToJson } from "./utilities.js";
-import { calculateCourseDays } from "./dateFunction.js";
-import { initHeader } from "./header.js";
+import HttpClient from "../utilities/http.js";
+import { initHeader } from "../utilities/header.js";
+import { convertFormDataToJson } from "../utilities/utilities.js";
+import { calculateCourseDays } from "../utilities/dateFunction.js";
 
 const form = document.querySelector('#updateCourseForm');
 const deleteButton = document.querySelector('#deleteButton');
@@ -9,6 +9,7 @@ const deleteButton = document.querySelector('#deleteButton');
 let courseId = 0;
 
 const initpage = async () => {
+    initHeader();
     courseId = location.search.split('=')[1];
     getCourse(courseId);
 };
