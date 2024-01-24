@@ -9,7 +9,7 @@
       "endDate": "2024-09-10",
       "automatedDaysCount": "97 (137)",
       "price": "50",
-      "description": "test",
+      "description": "This immersive classroom-based course is meticulously crafted to guide learners through the essentials and complexities of software development. Spanning essential programming foundations to sophisticated software engineering methodologies, the course immerses students in a thorough exploration of coding principles and development practices. By merging solid theoretical underpinnings with extensive practical exercises, participants will master the art of crafting, refining, and launching powerful software solutions.",
       "id": 2
     },
     {
@@ -20,6 +20,8 @@
       "startDate": "2024-07-13",
       "endDate": "2024-10-30",
       "automatedDaysCount": "77 (110)",
+      "price": "50",
+      "description": "This versatile course offers the best of both worlds, allowing students to engage in software development learning either online or in a traditional classroom setting. Designed to cover the spectrum from foundational programming concepts to advanced software engineering strategies, this curriculum provides a comprehensive dive into the mechanics of coding and application development. Combining rigorous academic theory with practical, hands-on projects, the course equips students with the competencies to conceive, build, and deploy sophisticated software applications.",
       "id": 3
     },
     {
@@ -30,6 +32,8 @@
       "startDate": "2024-08-12",
       "endDate": "2024-10-08",
       "automatedDaysCount": "42 (58)",
+      "price": "50",
+      "description": "This versatile course offers the best of both worlds, allowing students to engage in software development learning either online or in a traditional classroom setting. Designed to cover the spectrum from foundational programming concepts to advanced software engineering strategies, this curriculum provides a comprehensive dive into the mechanics of coding and application development. Combining rigorous academic theory with practical, hands-on projects, the course equips students with the competencies to conceive, build, and deploy sophisticated software applications.",
       "id": 4
     },
     {
@@ -40,6 +44,8 @@
       "startDate": "2024-01-10",
       "endDate": "2024-11-08",
       "automatedDaysCount": "218 (304)",
+      "price": "50",
+      "description": "This comprehensive online course is designed to equip learners with the foundational skills and knowledge required for a successful career in software development. Covering a wide range of critical topics, from basic programming principles to advanced software engineering techniques, this course offers a deep dive into the world of coding and development. Through a blend of theoretical concepts and practical, hands-on projects, students will gain the ability to design, develop, and deploy robust software applications.",
       "id": 5
     },
     {
@@ -50,16 +56,20 @@
       "startDate": "2024-09-21",
       "endDate": "2024-06-01",
       "automatedDaysCount": "Starting date needs to be before end date",
+      "price": "50",
+      "description": "This comprehensive online course is designed to equip learners with the foundational skills and knowledge required for a successful career in software development. Covering a wide range of critical topics, from basic programming principles to advanced software engineering techniques, this course offers a deep dive into the world of coding and development. Through a blend of theoretical concepts and practical, hands-on projects, students will gain the ability to design, develop, and deploy robust software applications.",
       "id": 6
     },
     {
       "title": "Database Management with SQL",
       "reg": "CS106",
-      "delivery": "Both",
+      "delivery": "Online",
       "imageUrl": "placeholder.png",
       "startDate": "2024-04-23",
       "endDate": "2024-11-27",
       "automatedDaysCount": "156 (219)",
+      "price": "50",
+      "description": "This versatile course offers the best of both worlds, allowing students to engage in software development learning either online or in a traditional classroom setting. Designed to cover the spectrum from foundational programming concepts to advanced software engineering strategies, this curriculum provides a comprehensive dive into the mechanics of coding and application development. Combining rigorous academic theory with practical, hands-on projects, the course equips students with the competencies to conceive, build, and deploy sophisticated software applications.",
       "id": 7
     },
     {
@@ -70,6 +80,8 @@
       "startDate": "2024-02-15",
       "endDate": "2024-04-28",
       "automatedDaysCount": "52 (74)",
+      "price": "50",
+      "description": "This immersive classroom-based course is meticulously crafted to guide learners through the essentials and complexities of software development. Spanning essential programming foundations to sophisticated software engineering methodologies, the course immerses students in a thorough exploration of coding principles and development practices. By merging solid theoretical underpinnings with extensive practical exercises, participants will master the art of crafting, refining, and launching powerful software solutions.",
       "id": 8
     },
     {
@@ -80,6 +92,8 @@
       "startDate": "2024-06-10",
       "endDate": "2024-07-10",
       "automatedDaysCount": "23 (31)",
+      "price": "50",
+      "description": "This comprehensive online course is designed to equip learners with the foundational skills and knowledge required for a successful career in software development. Covering a wide range of critical topics, from basic programming principles to advanced software engineering techniques, this course offers a deep dive into the world of coding and development. Through a blend of theoretical concepts and practical, hands-on projects, students will gain the ability to design, develop, and deploy robust software applications.",
       "id": 9
     },
     {
@@ -90,6 +104,8 @@
       "startDate": "2024-05-01",
       "endDate": "2024-06-15",
       "automatedDaysCount": "33 (46)",
+      "price": "50",
+      "description": "This versatile course offers the best of both worlds, allowing students to engage in software development learning either online or in a traditional classroom setting. Designed to cover the spectrum from foundational programming concepts to advanced software engineering strategies, this curriculum provides a comprehensive dive into the mechanics of coding and application development. Combining rigorous academic theory with practical, hands-on projects, the course equips students with the competencies to conceive, build, and deploy sophisticated software applications.",
       "id": 10
     },
     {
@@ -100,6 +116,8 @@
       "startDate": "2024-03-20",
       "endDate": "2024-05-19",
       "automatedDaysCount": "43 (61)",
+      "price": "50",
+      "description": "This immersive classroom-based course is meticulously crafted to guide learners through the essentials and complexities of software development. Spanning essential programming foundations to sophisticated software engineering methodologies, the course immerses students in a thorough exploration of coding principles and development practices. By merging solid theoretical underpinnings with extensive practical exercises, participants will master the art of crafting, refining, and launching powerful software solutions.",
       "id": 11
     },
     {
@@ -110,6 +128,8 @@
       "startDate": "2024-08-05",
       "endDate": "2024-08-30",
       "automatedDaysCount": "20 (26)",
+      "price": "50",
+      "description": "This comprehensive online course is designed to equip learners with the foundational skills and knowledge required for a successful career in software development. Covering a wide range of critical topics, from basic programming principles to advanced software engineering techniques, this course offers a deep dive into the world of coding and development. Through a blend of theoretical concepts and practical, hands-on projects, students will gain the ability to design, develop, and deploy robust software applications.",
       "id": 12
     },
     {
@@ -120,6 +140,8 @@
       "startDate": "2024-07-01",
       "endDate": "2024-07-19",
       "automatedDaysCount": "15 (19)",
+      "price": "50",
+      "description": "This versatile course offers the best of both worlds, allowing students to engage in software development learning either online or in a traditional classroom setting. Designed to cover the spectrum from foundational programming concepts to advanced software engineering strategies, this curriculum provides a comprehensive dive into the mechanics of coding and application development. Combining rigorous academic theory with practical, hands-on projects, the course equips students with the competencies to conceive, build, and deploy sophisticated software applications.",
       "id": 13
     },
     {
@@ -130,6 +152,8 @@
       "startDate": "2024-09-05",
       "endDate": "2024-11-20",
       "automatedDaysCount": "54 (77)",
+      "price": "50",
+      "description": "This immersive classroom-based course is meticulously crafted to guide learners through the essentials and complexities of software development. Spanning essential programming foundations to sophisticated software engineering methodologies, the course immerses students in a thorough exploration of coding principles and development practices. By merging solid theoretical underpinnings with extensive practical exercises, participants will master the art of crafting, refining, and launching powerful software solutions.",
       "id": 14
     },
     {
@@ -140,6 +164,8 @@
       "startDate": "2024-04-27",
       "endDate": "2024-09-10",
       "automatedDaysCount": "97 (137)",
+      "price": "50",
+      "description": "This comprehensive online course is designed to equip learners with the foundational skills and knowledge required for a successful career in software development. Covering a wide range of critical topics, from basic programming principles to advanced software engineering techniques, this course offers a deep dive into the world of coding and development. Through a blend of theoretical concepts and practical, hands-on projects, students will gain the ability to design, develop, and deploy robust software applications.",
       "id": 15
     },
     {
@@ -150,6 +176,8 @@
       "startDate": "2024-07-13",
       "endDate": "2024-10-30",
       "automatedDaysCount": "77 (110)",
+      "price": "50",
+      "description": "This versatile course offers the best of both worlds, allowing students to engage in software development learning either online or in a traditional classroom setting. Designed to cover the spectrum from foundational programming concepts to advanced software engineering strategies, this curriculum provides a comprehensive dive into the mechanics of coding and application development. Combining rigorous academic theory with practical, hands-on projects, the course equips students with the competencies to conceive, build, and deploy sophisticated software applications.",
       "id": 16
     },
     {
@@ -160,6 +188,8 @@
       "startDate": "2024-04-27",
       "endDate": "2024-09-10",
       "automatedDaysCount": "97 (137)",
+      "price": "50",
+      "description": "This immersive classroom-based course is meticulously crafted to guide learners through the essentials and complexities of software development. Spanning essential programming foundations to sophisticated software engineering methodologies, the course immerses students in a thorough exploration of coding principles and development practices. By merging solid theoretical underpinnings with extensive practical exercises, participants will master the art of crafting, refining, and launching powerful software solutions.",
       "id": 17
     }
   ],

@@ -11,7 +11,7 @@ const detailedCourseCardConfig = [
     { elementType: 'span', className: 'course-days', textContent: 'Days: {{automatedDaysCount}}' },
     { elementType: 'span', className: 'course-price', textContent: 'Price: ${{price}}' },
     { elementType: 'p', className: 'course-description', textContent: '{{description}}' },
-    { elementType: 'button', className: 'buyButton', textContent: 'Buy Course' },
+    //{ elementType: 'button', className: 'buyButton', textContent: 'Buy Course' },
     ];
 
 let courseId = 0;
@@ -32,7 +32,31 @@ const getCourse = async (id) => {
 const displayCourseDetails = (course) => {
     const container = document.getElementById('course-detail-container');
     const detailCard = createDynamicCard(course, detailedCourseCardConfig);
+
+    //Dynamically add the buy button based on delivery method
+    switch (course.delivery) {
+        case "Classroom":
+            addBuyButton(detailCard, "Buy Classroom Course");
+            break;
+        case "Online":
+            addBuyButton(detailCard, "Buy Online Course");
+            break;
+        case "Both":
+            addBuyButton(detailCard, "Buy Classroom Course");
+            addBuyButton(detailCard, "Buy Online Course");
+            break;
+        default:
+            console.error("Invalid delivery method");
+    }
+
     container.appendChild(detailCard);
 };
+
+function addBuyButton(card, buttonText) {
+    const button = document.createElement('button');
+    button.className = 'buyButton';
+    button.textContent = buttonText;
+    card.appendChild(button);
+}
 
 document.addEventListener('DOMContentLoaded', initPage);
