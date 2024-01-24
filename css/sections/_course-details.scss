@@ -6,7 +6,12 @@
     max-width: $pageWidthDesk;
     margin: pxToRem(16);
     margin-bottom: pxToRem(64);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 .course-details-card img {
-    width: 100%;
+    width: 30%;
 }

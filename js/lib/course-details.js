@@ -35,14 +35,14 @@ const displayCourseDetails = (course) => {
     //Dynamically add the buy button based on delivery method
     switch (course.delivery) {
         case "Classroom":
-            addBuyButton(detailCard, "Buy Classroom Course");
+            addBuyButton(detailCard, "Buy Classroom Course", course);
             break;
         case "Online":
-            addBuyButton(detailCard, "Buy Online Course");
+            addBuyButton(detailCard, "Buy Online Course", course);
             break;
         case "Both":
-            addBuyButton(detailCard, "Buy Classroom Course");
-            addBuyButton(detailCard, "Buy Online Course");
+            addBuyButton(detailCard, "Buy Classroom Course",course);
+            addBuyButton(detailCard, "Buy Online Course", course);
             break;
         default:
             console.error("Invalid delivery method");
@@ -51,11 +51,68 @@ const displayCourseDetails = (course) => {
     container.appendChild(detailCard);
 };
 
-function addBuyButton(card, buttonText) {
+function addBuyButton(card, buttonText, course) {
     const button = document.createElement('button');
     button.className = 'buyButton';
     button.textContent = buttonText;
     card.appendChild(button);
+
+    button.addEventListener('click', async () => {
+        // Retrieve user's email from localStorage
+        const userEmail = localStorage.getItem('userEmail');
+        const usersHttpClient = new HttpClient(`http://localhost:3000/users`);
+        const adminEmail = localStorage.getItem('adminEmail');
+        const adminUsersHttpClient = new HttpClient(`http://localhost:3000/adminUsers`);
+
+        try {
+            // Fetch all users
+            const users = await usersHttpClient.get();
+            const adminUsers = await adminUsersHttpClient.get();
+            // Find the user object based on the email
+            const user = users.find(u => u.email === userEmail);
+            const admin = adminUsers.find(u => u.email === adminEmail);
+
+            if(admin) {
+                alert('You do not need to buy this course.\n Since you are an admin all courses are free.\n !! HUURRAAAYYYY !!\n (snacka med Berit på sju:an, hon fixar in dig)');
+                return;
+            } else if (!user) {
+                alert('User not found. Please log in to buy a course.');
+                return;
+            }
+
+
+            // Check if the course is already in the purchasedCourses array
+            const courseAlreadyPurchased = user.purchasedCourses?.some(purchasedCourse => purchasedCourse.reg === course.reg);
+
+            if (courseAlreadyPurchased) {
+                alert('You have already purchased this course.');
+                return; // Prevent further execution
+            }
+            console.log('1', course)
+            // Prepare updated user data with new course info
+            const updatedUserData = {
+                ...user,
+                purchasedCourses: [
+                    ...(user.purchasedCourses || []),
+                    {
+                        reg: course.reg,
+                        title: course.title,
+                        delivery: course.delivery,
+                        price: course.price
+                    }
+                ]
+            };
+
+            // Update the user data on the server
+            await new HttpClient(`http://localhost:3000/users/${user.id}`).update(updatedUserData);
+            alert('Course purchased successfully!');
+        } catch (error) {
+            console.error('Failed to update user data:', error);
+            alert('An error occurred while purchasing the course.');
+        }
+    });
 }
+
+
 
 document.addEventListener('DOMContentLoaded', initPage);

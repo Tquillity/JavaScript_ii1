@@ -206,7 +206,27 @@
       "firstName": "Jane",
       "lastName": "Doe",
       "email": "jane.doe@mail.com",
-      "password": "654321"
+      "password": "654321",
+      "purchasedCourses": [
+        {
+          "reg": "MOB101",
+          "title": "Mobile development",
+          "delivery": "Both",
+          "price": "50"
+        },
+        {
+          "reg": "SD101",
+          "title": "System Development 101",
+          "delivery": "Classroom",
+          "price": "50"
+        },
+        {
+          "reg": "CS103",
+          "title": "Introduction to Python Programming",
+          "delivery": "Both",
+          "price": "50"
+        }
+      ]
     },
     {
       "firstName": "Mikael",

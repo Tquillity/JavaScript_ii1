@@ -18,23 +18,19 @@ async function handleLoginSubmit(event) {
         const admin = admins.find(admin => admin.email === email && admin.password === password);
 
         if (user) {
-            console.log('Login successful', user);
-            console.log('isLoggedin', localStorage.getItem('isLoggedIn'));
             localStorage.setItem('isLoggedIn', 'true');
             localStorage.setItem('isAdmin', 'false');
+            localStorage.setItem('userEmail', email);
             window.location.href = 'courses.html';
         } else if (admin){
-            console.log('login successful', admin);
-            console.log('isLoggedin', localStorage.getItem('isLoggedIn'));
-            console.log('isAdmin', localStorage.getItem('isAdmin'));
             localStorage.setItem('isLoggedIn', 'true');
             localStorage.setItem('isAdmin', 'true');
+            localStorage.setItem('adminEmail', email);
             window.location.href = 'admin-index.html';
         } else {
             alert('Login failed: Invalid email or password.');
         }
     } catch (error) {
-        console.error('Login error:', error);
         alert('Login error');
     }
 }

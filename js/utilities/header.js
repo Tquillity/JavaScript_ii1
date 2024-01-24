@@ -58,6 +58,8 @@ function attachEventListeners() {
             e.preventDefault();
             localStorage.removeItem('isLoggedIn');
             localStorage.removeItem('isAdmin');
+            localStorage.removeItem('userEmail');
+            localStorage.removeItem('adminEmail');
             window.location.href = 'index.html';
         });
     }
