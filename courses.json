@@ -15,7 +15,7 @@
     {
       "title": "Mobile development",
       "reg": "MOB101",
-      "delivery": "Blended",
+      "delivery": "Both",
       "imageUrl": "mobile.png",
       "startDate": "2024-07-13",
       "endDate": "2024-10-30",
@@ -25,7 +25,7 @@
     {
       "title": "Introduction to Python Programming",
       "reg": "CS103",
-      "delivery": "Blended",
+      "delivery": "Both",
       "imageUrl": "placeholder.png",
       "startDate": "2024-08-12",
       "endDate": "2024-10-08",
@@ -55,7 +55,7 @@
     {
       "title": "Database Management with SQL",
       "reg": "CS106",
-      "delivery": "Blended",
+      "delivery": "Both",
       "imageUrl": "placeholder.png",
       "startDate": "2024-04-23",
       "endDate": "2024-11-27",
@@ -85,7 +85,7 @@
     {
       "title": "Game Development with Unity",
       "reg": "CS109",
-      "delivery": "Blended",
+      "delivery": "Both",
       "imageUrl": "placeholder.png",
       "startDate": "2024-05-01",
       "endDate": "2024-06-15",
@@ -115,7 +115,7 @@
     {
       "title": "Blockchain Basics",
       "reg": "CS112",
-      "delivery": "Blended",
+      "delivery": "Both",
       "imageUrl": "placeholder.png",
       "startDate": "2024-07-01",
       "endDate": "2024-07-19",
@@ -145,7 +145,7 @@
     {
       "title": "Machine Learning with Python",
       "reg": "CS102",
-      "delivery": "Blended",
+      "delivery": "Both",
       "imageUrl": "placeholder.png",
       "startDate": "2024-07-13",
       "endDate": "2024-10-30",
