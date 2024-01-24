@@ -10,6 +10,9 @@
     background: $card-background-color;
     min-width: pxToRem(300);
     border-radius: pxToRem(8);
+}
+
+.admin-card, .course-card {
     cursor: pointer;
 }
 
@@ -17,6 +20,5 @@
     border-top-right-radius: 0.5rem;
     border-top-left-radius: 0.5rem;
     width: 100%;
-    cursor: pointer;
   }
   

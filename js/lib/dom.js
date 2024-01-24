@@ -21,6 +21,21 @@ const createElementFromConfig = (config, data, imageClickHandler) => {
 const createDynamicCard = (data, elementsConfig, imageClickHandler) => {
     const card = document.createElement('div');
     card.classList.add('dynamic-card'); // A base class for all dynamic cards
+    
+    // set class name for card based pathname of page to allow for custom styling
+    const pathName = window.location.pathname;
+    let secondClass = '';
+    if(pathName.includes('admin-index')) {
+        secondClass = 'admin-card';
+    } else if(pathName.includes('courses.html')) {
+        secondClass = 'course-card';
+    } else if(pathName.includes('course-details.html')) {
+        secondClass = 'course-details-card';
+    }
+
+    if (secondClass) {
+        card.classList.add(secondClass);
+    }
 
     elementsConfig.forEach(config => {
         const element = createElementFromConfig(config, data, imageClickHandler);

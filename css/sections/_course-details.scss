@@ -1,0 +1,12 @@
+#course-detail-container {
+    display: grid;
+    justify-content: center;
+}
+.course-details-card {
+    max-width: $pageWidthDesk;
+    margin: pxToRem(16);
+    margin-bottom: pxToRem(64);
+}
+.course-details-card img {
+    width: 100%;
+}

@@ -11,7 +11,6 @@ const detailedCourseCardConfig = [
     { elementType: 'span', className: 'course-days', textContent: 'Days: {{automatedDaysCount}}' },
     { elementType: 'span', className: 'course-price', textContent: 'Price: ${{price}}' },
     { elementType: 'p', className: 'course-description', textContent: '{{description}}' },
-    //{ elementType: 'button', className: 'buyButton', textContent: 'Buy Course' },
     ];
 
 let courseId = 0;
@@ -31,7 +30,7 @@ const getCourse = async (id) => {
 
 const displayCourseDetails = (course) => {
     const container = document.getElementById('course-detail-container');
-    const detailCard = createDynamicCard(course, detailedCourseCardConfig);
+    const detailCard = createDynamicCard(course, detailedCourseCardConfig, null);
 
     //Dynamically add the buy button based on delivery method
     switch (course.delivery) {
