@@ -220,6 +220,19 @@
           "price": "50"
         }
       ]
+    },
+    {
+      "firstName": "Jane",
+      "lastName": "Doe",
+      "email": "jane.doe@gmail.com",
+      "password": "jane",
+      "invoiceAdress": "janestreet",
+      "invoiceZip": "111 111",
+      "invoiceCity": "city",
+      "invoiceCountry": "country",
+      "phone": "0707777777",
+      "userName": "jane.doe@gmail.com",
+      "id": 2
     }
   ],
   "adminUsers": [
@@ -236,6 +249,22 @@
       "lastName": "admin1",
       "email": "chef.two@we.com",
       "password": "megasecret"
+    },
+    {
+      "firstName": "test",
+      "lastName": "test",
+      "email": "nej@nej.com",
+      "password": "test",
+      "userName": "nej@nej.com",
+      "id": 3
+    },
+    {
+      "firstName": "test2",
+      "lastName": "test2",
+      "email": "test2@test2.com",
+      "password": "test2",
+      "userName": "test2@test2.com",
+      "id": 4
     }
   ]
 }
