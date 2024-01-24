@@ -13,7 +13,7 @@ const detailedCourseCardConfig = [
     { elementType: 'p', className: 'course-description', textContent: '{{description}}' },
     ];
 
-let courseId = 0;
+    let courseId = 0;
 
 const initPage = async () => {
     initHeader();

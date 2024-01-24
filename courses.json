@@ -195,18 +195,17 @@
   ],
   "users": [
     {
+      "firstName": "Mikael",
+      "lastName": "Sundh",
+      "email": "mikael.sundh@gmail.com",
+      "password": "test",
+      "invoiceAdress": "Barnängsgatan 40",
+      "invoiceZip": "116 48",
+      "invoiceCity": "Stockholm",
+      "invoiceCountry": "Sweden",
+      "phone": "0793395098",
+      "userName": "mikael.sundh@gmail.com",
       "id": 1,
-      "firstName": "John",
-      "lastName": "Doe",
-      "email": "jonh.doe@mail.com",
-      "password": "123456"
-    },
-    {
-      "id": 2,
-      "firstName": "Jane",
-      "lastName": "Doe",
-      "email": "jane.doe@mail.com",
-      "password": "654321",
       "purchasedCourses": [
         {
           "reg": "MOB101",
@@ -215,34 +214,12 @@
           "price": "50"
         },
         {
-          "reg": "SD101",
-          "title": "System Development 101",
+          "reg": "CS107",
+          "title": "Front-End Development with React",
           "delivery": "Classroom",
-          "price": "50"
-        },
-        {
-          "reg": "CS103",
-          "title": "Introduction to Python Programming",
-          "delivery": "Both",
           "price": "50"
         }
       ]
-    },
-    {
-      "firstName": "Mikael",
-      "lastName": "Sundh",
-      "email": "mikael.sundh@gmail.com",
-      "password": "1111",
-      "userName": "mikael.sundh@gmail.com",
-      "id": 3
-    },
-    {
-      "firstName": "angela",
-      "lastName": "heitmann",
-      "email": "a.h.heitmann@gmail.com",
-      "password": "password",
-      "userName": "a.h.heitmann@gmail.com",
-      "id": 4
     }
   ],
   "adminUsers": [
