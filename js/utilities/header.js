@@ -23,8 +23,8 @@ export function initHeader() {
                 }
                 ${isAdmin ?
                     `<li class="menu-item nav-admin"><a href="admin-index.html">Administration ===> Courses</a></li>
-                    <li class="menu-item nav-admin"><a href="admin-list-customers.html">Customers</a></li>
-                    <li class="menu-item nav-admin"><a href="admin-user-creation.html">Add Admin Users <===</li>` :
+                    <li class="menu-item nav-admin"><a href="admin-list-costumers.html">Customers</a></li>
+                    <li class="menu-item nav-admin"><a href="admin-user-creation.html">Add Admin Users <===</a></li>` :
                     ``
                 }    
 
