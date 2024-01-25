@@ -19,14 +19,16 @@ async function handleFormSubmit(event) {
     userData.userName = userData.email;
 
     try {
-        // check if user email already exists
+        // check if user/admin email already exists
         const existingUsers = await userAccount.get();
+        const existingAdmin = await adminAccount.get();
         const duplicateUser = existingUsers.find(user => user.email === userData.email);
-        
+        const duplicateAdmin = existingAdmin.find(user => user.email === userData.email);
+
         // check if admin user
         const isAdmin = localStorage.getItem('isAdmin') === 'true';
-
-        if (duplicateUser) {
+        
+        if (duplicateUser || duplicateAdmin) {
             alert('Email already exists');
             return;
         }
