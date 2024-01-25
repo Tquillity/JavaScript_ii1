@@ -8,17 +8,32 @@
 .dynamic-card {
     border:solid pxToRem(1) $card-border-color;
     background: $card-background-color;
-    min-width: pxToRem(300);
+    max-width: pxToRem(460);
     border-radius: pxToRem(8);
 }
 
 .admin-card, .course-card {
     cursor: pointer;
+    text-align: center;
 }
 
 .course-card img {
-    border-top-right-radius: 0.5rem;
-    border-top-left-radius: 0.5rem;
     width: 100%;
   }
+
+.course-title {
+    margin: pxToRem(10);
+}
+
   
+@media (max-width: $pageWidthTablet) {
+    #courses-gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: $pageWidthMobile) {
+    #courses-gallery {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
