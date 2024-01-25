@@ -191,6 +191,30 @@
       "price": "50",
       "description": "This immersive classroom-based course is meticulously crafted to guide learners through the essentials and complexities of software development. Spanning essential programming foundations to sophisticated software engineering methodologies, the course immerses students in a thorough exploration of coding principles and development practices. By merging solid theoretical underpinnings with extensive practical exercises, participants will master the art of crafting, refining, and launching powerful software solutions.",
       "id": 17
+    },
+    {
+      "title": "UX/UI for the PROs",
+      "reg": "PRO1000",
+      "delivery": "Both",
+      "imageUrl": "uiux.png",
+      "startDate": "2024-02-01",
+      "endDate": "2024-05-31",
+      "automatedDaysCount": "87 (121)",
+      "price": "999",
+      "description": "Unlock the Secrets of Exceptional User Experiences with Our Pro UI/UX Course!\n\nIn this comprehensive course, you'll dive deep into the world of User Interface (UI) and User Experience (UX) design, learning the skills and techniques used by industry professionals to create captivating and user-friendly digital products. Whether you're a seasoned designer looking to level up or a newcomer eager to enter the field, our course covers it all.",
+      "id": 18
+    },
+    {
+      "title": "Advanced software testing - with extra long title just to make sure that it looks okej styling wise",
+      "reg": "ADVsoft99",
+      "delivery": "Classroom",
+      "imageUrl": "testing.png",
+      "startDate": "2024-01-26",
+      "endDate": "2024-01-11",
+      "automatedDaysCount": "Starting date needs to be before end date",
+      "price": "0",
+      "description": "This course is to test that even ling titles look good.\n\nAlso to test that the wrong dates input warning message works :)",
+      "id": 19
     }
   ],
   "users": [

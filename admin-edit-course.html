@@ -15,65 +15,62 @@
         <header id="header-nav-placeholder"></header>
         
     <main>
-        <section class="container">
-            <h1>Edit Courses</h1>
-            <button id="backButton" class="button" onclick="location.href='admin-index.html'">Back to Admin Page</button>
-
-            <form id="updateCourseForm">
-                <div class="form-group">
+        <section class="margin-collapse-problem">
+            <div class="course-creation-container">
+                <h1>Edit Courses</h1>
+                <div class="top-course-button-container">
                     <button type="button" id="clearFormButton" class="button">Empty the form</button>
+                    <button id="backButton" class="button" onclick="location.href='admin-index.html'">Back to Admin Page</button>
                 </div>
-                <div class="form-group">
-                    <label for="title">Course Title</label>
-                    <input type="text" id="title" name="title" placeholder="Course Name">
-                </div>
-                <div class="form-group">
-                    <label for="reg">Course Registration Number</label>
-                    <input type="text" id="reg" name="reg" placeholder="Course Registration Number">
-                </div>
-                <div class="form-group">
-                    <label for="delivery">Course Delivery Method</label>
-                    <select id="delivery" name="delivery">
-                        <option value="Online">Online</option>
-                        <option value="Classroom">Classroom</option>
-                        <option value="Both">Both</option>
-                    </select>
-                </div>
-                <div class="form-group">
-                    <label for="imageUrl">Course Image URL</label>
-                    <input type="text" id="imageUrl" name="imageUrl" value="adress here..."
-                        placeholder="ange namn på bild här...">
-                </div>
-                <div class="form-group"> <!-- ! Byt ut om jag har tid över till ett JavaScript-baserat date picker library för att garantera en bättre lösning överolika browsers, samt att detta är en JS-kurs =P Ex. jQuery UI DatePicker, Pikaday, or Flatpickr. -->
-                    <label for="startDate">Course Starting Date</label>
-                    <input type="date" id="startDate" name="startDate" placeholder="Course Starting Date">
-                </div>
-                <div class="form-group">
-                    <label for="endDate">Course Ending Date</label>
-                    <input type="date" id="endDate" name="endDate" placeholder="Course Ending Date">
-                </div>
-                <div class="form-group">
-                    <label for="automatedDaysCount">Automated Days Count</label>
-                    <input type="text" id="automatedDaysCount" name="automatedDaysCount" readonly>
-                </div>                
-                <div class="form-group">
-                    <label for="price">Course Price</label>
-                    <input type="text" id="price" name="price" placeholder="Course Price">
-                </div>
-                <div class="form-group">
-                    <label for="description">Course Description</label>
-                    <textarea id="description" name="description" placeholder="Course Description"></textarea>
-                </div>
-                
-                <div class="form-group">
-                    <button type="submit" id="editButton" class="button">Uppdate This Course</button>
-                </div>
-                <div class="form-group">
-                    <button type="submit" id="createButton" class="button">Create New Course</button>
-                </div class="form-group">
+
+                <form id="updateCourseForm">
+                    <div class="form-group">
+                        <label for="title">Course Title</label>
+                        <input type="text" id="title" name="title" placeholder="Course Name">
+                    </div>
+                    <div class="form-group">
+                        <label for="reg">Course Registration Number</label>
+                        <input type="text" id="reg" name="reg" placeholder="Course Registration Number">
+                    </div>
+                    <div class="form-group">
+                        <label for="delivery">Course Delivery Method</label>
+                        <select id="delivery" name="delivery">
+                            <option value="Online">Online</option>
+                            <option value="Classroom">Classroom</option>
+                            <option value="Both">Both</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="imageUrl">Course Image URL</label>
+                        <input type="text" id="imageUrl" name="imageUrl" placeholder="Add image name here...">
+                    </div>
+                    <div class="form-group"> <!-- ! Byt ut om jag har tid över till ett JavaScript-baserat date picker library för att garantera en bättre lösning överolika browsers, samt att detta är en JS-kurs =P Ex. jQuery UI DatePicker, Pikaday, or Flatpickr. -->
+                        <label for="startDate">Course Starting Date</label>
+                        <input type="date" id="startDate" name="startDate" placeholder="Course Starting Date">
+                    </div>
+                    <div class="form-group">
+                        <label for="endDate">Course Ending Date</label>
+                        <input type="date" id="endDate" name="endDate" placeholder="Course Ending Date">
+                    </div>
+                    <div class="form-group">
+                        <label for="automatedDaysCount">Automated Days Count - weekdays (all days) </label>
+                        <input type="text" id="automatedDaysCount" name="automatedDaysCount" readonly placeholder="AUTOMATICALLY calculated on Start & End date entry"> <!-- Remove readonly if you want to manually enter days count. -->
+                    </div>                
+                    <div class="form-group">
+                        <label for="price">Course Price</label>
+                        <input type="text" id="price" name="price" placeholder="Course Price">
+                    </div>
+                    <div class="form-group">
+                        <label for="description">Course Description</label>
+                        <textarea id="description" name="description" placeholder="Course Description"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="bottom-course-button-container">
+                    <button type="submit" id="editButton" class="button">Uppdate Course</button>
+                    <button type="submit" id="createButton" class="button">Create Course</button>
                     <button typre="submit" id="deleteButton" class="button">Delete Course</button>
-                </div>
-            </form>
+            </div>
         </section>
     </main>
 
