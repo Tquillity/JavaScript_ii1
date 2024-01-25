@@ -11,6 +11,12 @@ let courseId = 0;
 const initpage = async () => {
     initHeader();
     courseId = location.search.split('=')[1];
+    
+    if (!courseId) {
+        form.reset();
+        return;
+    }
+
     getCourse(courseId);
 };
 
