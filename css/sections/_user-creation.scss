@@ -40,3 +40,15 @@
 #userCreationForm input::placeholder {
     color: #999;
 }
+
+@media (max-width: $pageWidthTablet) {
+    .user-creation-container {
+        max-width: pxToRem(500);
+    }
+}
+
+@media (max-width: $pageWidthMobile) {
+    .user-creation-container {
+        max-width: pxToRem(300);
+    }
+}
