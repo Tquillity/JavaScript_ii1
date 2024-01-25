@@ -205,7 +205,7 @@
       "id": 18
     },
     {
-      "title": "Advanced software testing - with extra long title just to make sure that it looks okej styling wise",
+      "title": "Advanced software testing - with extra long title just to make sure that it looks okej styling wise. Now it looks good even longer!",
       "reg": "ADVsoft99",
       "delivery": "Classroom",
       "imageUrl": "testing.png",
@@ -213,7 +213,7 @@
       "endDate": "2024-01-11",
       "automatedDaysCount": "Starting date needs to be before end date",
       "price": "0",
-      "description": "This course is to test that even ling titles look good.\n\nAlso to test that the wrong dates input warning message works :)",
+      "description": "This course is to test that even ling titles look good.\n\nAlso to test that the wrong dates input warning message works :)\n\n",
       "id": 19
     }
   ],

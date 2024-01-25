@@ -2,7 +2,7 @@
 // _variables.scss
 // ==================================
 
-$pageWidthDesk: 1200px;
-$pageWidthTablet: 800px;
-$pageWidthMobile: 480px;
-$headerHeight: 80px;
+$pageWidthDesk: pxToRem(1200);
+$pageWidthTablet: pxToRem(800);
+$pageWidthMobile: pxToRem(500);
+$headerHeight: pxToRem(80);

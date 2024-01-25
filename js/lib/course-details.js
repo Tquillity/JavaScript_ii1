@@ -7,7 +7,7 @@ const detailedCourseCardConfig = [
     { elementType: 'img', attribute: 'src', dataField: 'imageUrl', prefix: '../assets/images/', className: 'course-image' },
     { elementType: 'span', className: 'course-detail', textContent: 'Reg: {{reg}}' },
     { elementType: 'span', className: 'course-detail', textContent: 'Delivery Method: {{delivery}}' },
-    { elementType: 'span', className: 'course-dates', textContent: 'Start Date: {{startDate}} - End Date: {{endDate}}' },
+    { elementType: 'span', className: 'course-dates', textContent: 'Start Date: {{startDate}} | End Date: {{endDate}}' },
     { elementType: 'span', className: 'course-days', textContent: 'Days: {{automatedDaysCount}}' },
     { elementType: 'span', className: 'course-price', textContent: 'Price: ${{price}}' },
     { elementType: 'p', className: 'course-description', textContent: '{{description}}' },

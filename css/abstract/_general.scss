@@ -50,6 +50,7 @@ button, .btn {
     font-size: pxToRem(15);
     cursor: pointer;
     transition: background-color 0.2s ease-in;
+    margin-bottom: pxToRem(10);
 }
 
 button:hover, btn:hover {

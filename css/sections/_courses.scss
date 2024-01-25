@@ -5,7 +5,7 @@
     gap: pxToRem(16);
 }
 
-.dynamic-card {
+.course-card {
     border:solid pxToRem(1) $card-border-color;
     background: $card-background-color;
     max-width: pxToRem(460);

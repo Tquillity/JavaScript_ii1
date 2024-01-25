@@ -18,7 +18,8 @@ function checkAdminLogin() {
 const courseCardConfig = [
     { elementType: 'h3', className: 'course-title', textContent: '{{title}}' },
     { elementType: 'span', className: 'course-detail', textContent: 'Delivery Method: {{delivery}}' },
-    { elementType: 'span', className: 'course-dates', textContent: 'Start Date: {{startDate}} - End Date: {{endDate}}' },
+    { elementType: 'span', className: 'course-dates', textContent: 'Start Date: {{startDate}}'},
+    { elementType: 'span', className: 'course-dates', textContent: 'End Date: {{endDate}}' },
 ];
 
 const initPage = async() => {

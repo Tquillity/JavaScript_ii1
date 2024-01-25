@@ -3,9 +3,16 @@
     justify-content: center;
 }
 .course-details-card {
+    border:solid pxToRem(1) $card-border-color;
+    background: $card-background-color;
+    max-width: pxToRem(460);
+    border-radius: pxToRem(8);
+
     max-width: $pageWidthDesk;
     margin: pxToRem(16);
     margin-bottom: pxToRem(64);
+    padding-left: pxToRem(20);
+    padding-right: pxToRem(5);
 
     display: flex;
     align-items: center;
