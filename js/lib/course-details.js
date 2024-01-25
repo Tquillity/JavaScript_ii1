@@ -35,14 +35,14 @@ const displayCourseDetails = (course) => {
     //Dynamically add the buy button based on delivery method
     switch (course.delivery) {
         case "Classroom":
-            addBuyButton(detailCard, "Buy Classroom Course", course);
+            addBuyButton(detailCard, "Buy Classroom Course", course, "Classroom");
             break;
         case "Online":
-            addBuyButton(detailCard, "Buy Online Course", course);
+            addBuyButton(detailCard, "Buy Online Course", course,"Online");
             break;
         case "Both":
-            addBuyButton(detailCard, "Buy Classroom Course",course);
-            addBuyButton(detailCard, "Buy Online Course", course);
+            addBuyButton(detailCard, "Buy Classroom Course",course, "Classroom");
+            addBuyButton(detailCard, "Buy Online Course", course, "Online");
             break;
         default:
             console.error("Invalid delivery method");
@@ -51,7 +51,7 @@ const displayCourseDetails = (course) => {
     container.appendChild(detailCard);
 };
 
-function addBuyButton(card, buttonText, course) {
+function addBuyButton(card, buttonText, course, deliveryMethod) {
     const button = document.createElement('button');
     button.className = 'buyButton';
     button.textContent = buttonText;
@@ -97,7 +97,7 @@ function addBuyButton(card, buttonText, course) {
                     {
                         reg: course.reg,
                         title: course.title,
-                        delivery: course.delivery,
+                        delivery: deliveryMethod,   // Fetch the delivery method from the button so "both" does not read in "both" from json file
                         price: course.price
                     }
                 ]
