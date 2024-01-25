@@ -84,7 +84,6 @@ document.getElementById('clearFormButton').addEventListener('click', function() 
 document.getElementById('updateCourseForm').reset();
 });
 
-// form.addEventListener('submit', updateCourse);
 editButton.addEventListener('click', updateCourse);
 createButton.addEventListener('click', createCourse);
 deleteButton.addEventListener('click', deleteCourse);

@@ -1,0 +1,71 @@
+.course-creation-container {
+    max-width: pxToRem(500);
+    margin: pxToRem(20) auto;
+    margin-bottom: pxToRem(20);
+    padding: pxToRem(20);
+    background-color: $form-background-color;
+    border-radius: pxToRem(8);
+}
+
+#updateCourseForm {
+    display: flex;
+    flex-direction: column;
+    grid-gap: pxToRem(15);
+}
+
+.top-course-button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: pxToRem(15);
+    margin-bottom: pxToRem(15);
+    padding-left: pxToRem(40);
+    padding-right: pxToRem(30);
+}
+
+.bottom-course-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: pxToRem(15);
+    margin-top: pxToRem(15);
+    margin-bottom: pxToRem(15);
+
+
+    #deleteButton {
+        background-color: red;
+        color: white;
+        padding: pxToRem(10);
+    }
+    
+    #createButton {
+        background-color: green;
+        color: white;
+    }
+    
+    #editButton {
+        background-color: blue;
+        color: white;
+    }
+}
+
+#updateCourseForm input[type="text"],
+#updateCourseForm input[type="email"],
+#updateCourseForm input[type="password"],
+#updateCourseForm input[type="tel"],
+#updateCourseForm textarea {
+    width: 100%;
+    padding: pxToRem(10);
+    margin-bottom: pxToRem(10);
+    border: pxToRem(1) solid $card-border-color;
+    border-radius: pxToRem(4);
+}
+
+#updateCourseForm textarea {
+    max-width: 100%;
+    min-width: 100%;
+}
+
+.margin-collapse-problem {
+    padding-bottom: pxToRem(10);
+}

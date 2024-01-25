@@ -17,19 +17,4 @@
 @import "./sections/frontpage.scss";
 @import "./sections/admin-list-costumers.scss";
 @import "./sections/user-creation.scss";
-
-
-#deleteButton {
-    background-color: red;
-    color: white;
-}
-
-#createButton {
-    background-color: green;
-    color: white;
-}
-
-#editButton {
-    background-color: blue;
-    color: white;
-}
+@import "./sections/admin-edit-course.scss";
