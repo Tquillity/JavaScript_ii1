@@ -210,7 +210,7 @@
         {
           "reg": "MOB101",
           "title": "Mobile development",
-          "delivery": "Both",
+          "delivery": "Classroom",
           "price": "50"
         },
         {
@@ -232,7 +232,60 @@
       "invoiceCountry": "country",
       "phone": "0707777777",
       "userName": "jane.doe@gmail.com",
-      "id": 2
+      "id": 2,
+      "purchasedCourses": [
+        {
+          "reg": "SD101",
+          "title": "System Development 101",
+          "delivery": "Classroom",
+          "price": "50"
+        },
+        {
+          "reg": "MOB101",
+          "title": "Mobile development",
+          "delivery": "Online",
+          "price": "50"
+        },
+        {
+          "reg": "CS103",
+          "title": "Introduction to Python Programming",
+          "delivery": "Classroom",
+          "price": "50"
+        }
+      ]
+    },
+    {
+      "firstName": "test",
+      "lastName": "test",
+      "email": "teat@test.com",
+      "password": "test",
+      "invoiceAdress": "test",
+      "invoiceZip": "111 11",
+      "invoiceCity": "test",
+      "invoiceCountry": "test",
+      "phone": "0701111111",
+      "userName": "teat@test.com",
+      "id": 3,
+      "purchasedCourses": [
+        {
+          "reg": "SD101",
+          "title": "System Development 101",
+          "delivery": "Classroom",
+          "price": "50"
+        },
+        {
+          "reg": "MOB101",
+          "title": "Mobile development",
+          "delivery": "Classroom",
+          "price": "50"
+        },
+        {
+          "reg": "CS103",
+          "title": "Introduction to Python Programming",
+          "delivery": "Online",
+          "price": "50"
+        }
+      ]
     }
   ],
   "adminUsers": [
@@ -249,22 +302,6 @@
       "lastName": "admin1",
       "email": "chef.two@we.com",
       "password": "megasecret"
-    },
-    {
-      "firstName": "test",
-      "lastName": "test",
-      "email": "nej@nej.com",
-      "password": "test",
-      "userName": "nej@nej.com",
-      "id": 3
-    },
-    {
-      "firstName": "test2",
-      "lastName": "test2",
-      "email": "test2@test2.com",
-      "password": "test2",
-      "userName": "test2@test2.com",
-      "id": 4
     }
   ]
 }

@@ -1,0 +1,15 @@
+.cardCoursePurchaseInfo, .cardListOfCostumers {
+    display: flex;
+    gap: pxToRem(10);
+    margin: pxToRem(20);
+    padding: pxToRem(16) pxToRem(10);
+    border-radius: pxToRem(10);
+    background-color: whitesmoke;
+    color: black;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+}
+
+.purchaseInfoListItem {
+    list-style: none;
+}
