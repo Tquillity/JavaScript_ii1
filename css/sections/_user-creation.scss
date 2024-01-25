@@ -1,0 +1,43 @@
+.user-creation-container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+#userCreationForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#userCreationForm input[type="text"],
+#userCreationForm input[type="email"],
+#userCreationForm input[type="password"],
+#userCreationForm input[type="tel"] {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid $card-border-color;
+    border-radius: 4px;
+}
+
+#userCreationForm button[type="submit"] {
+    padding: 10px;
+    background-color: $button-primary-color;
+    color: $button-text-color;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#userCreationForm button[type="submit"]:hover {
+    background-color: #004494;
+}
+
+/* Adjusting placeholder color for better contrast */
+#userCreationForm input::placeholder {
+    color: #999;
+}

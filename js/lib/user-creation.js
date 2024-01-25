@@ -6,7 +6,7 @@ const userAccount = new HttpClient('http://localhost:3000/users');
 const adminAccount = new HttpClient('http://localhost:3000/adminUsers');
 
 document.addEventListener('DOMContentLoaded', () => {
-    const form = document.querySelector('#userForm');
+    const form = document.querySelector('#userCreationForm');
     form.addEventListener('submit', handleFormSubmit);
 });
 
