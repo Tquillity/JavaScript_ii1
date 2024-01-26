@@ -1,5 +1,5 @@
 .hero {
-    min-height: calc(100vh - $headerHeight);
+    min-height: calc(100vh - pxToRem(38));
     width: 100%;
     background-image: url('../assets/images/backdrop_classroom.png');
     background-size: cover;
@@ -63,6 +63,10 @@
         }
     }
 
+}
+
+.heroIndex {
+    overflow-y: hidden;
 }
 
 @media screen and (min-width: $pageWidthMobile) {

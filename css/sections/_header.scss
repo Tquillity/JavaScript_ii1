@@ -7,13 +7,23 @@
     position: relative;
 }
 
+.headerNav, header {
+    position: relative;
+}
+
 header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+
     background-color: $header-background-color;
     color: $light-text-color;
     padding: pxToRem(10);
     text-align: center;
     margin: 0 auto;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+    box-shadow: 0 pxToRem(8) pxToRem(16) rgba(0, 0, 0, 0.15);
 }
 
 header ul {
@@ -45,4 +55,47 @@ header ul {
 .loginForm:not(.hidden) {
     opacity: 1;
     visibility: visible;
+}
+
+// Hamburger Icon Style
+.hamburger {
+    display: none; 
+    cursor: pointer;
+    font-size: pxToRem(30); 
+    padding: pxToRem(10);
+}
+
+
+@media (max-width: $pageWidthMobile) {
+    .hamburger {
+        display: block;
+    }
+
+
+
+    .header-container {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: $header-background-color;
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: pxToRem(20);
+        box-shadow: 0 pxToRem(8) pxToRem(16) rgba(0,0,0,0.2);
+
+        .menu {
+            flex-direction: column;
+            align-items: flex-start;
+
+            .menu-item {
+                margin-bottom: pxToRem(10);
+            }
+        }
+    }
+
+    .header-container.active {
+        display: block;
+    }
 }
