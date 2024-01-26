@@ -1,6 +1,29 @@
+.purchaseInfoListItem {
+    list-style: none;
+}
+.list-button-contanier {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: pxToRem(10);
+}
+
+#list-bought-courses, #list-costumers {
+    margin: 0 auto;
+    margin-bottom: pxToRem(10);
+}
+
+.course-list {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: $pageWidthDesk;
+}
+
 .cardCoursePurchaseInfo, .cardListOfCostumers {
     display: flex;
-    gap: pxToRem(10);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     margin: pxToRem(20);
     padding: pxToRem(16) pxToRem(10);
     border-radius: pxToRem(10);
@@ -8,8 +31,14 @@
     color: black;
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
     cursor: pointer;
+    max-width: $pageWidthDesk;
+    margin: pxToRem(20) auto;
 }
 
-.purchaseInfoListItem {
-    list-style: none;
+h2, h3 {
+    margin-bottom: pxToRem(10);
+}
+
+p {
+    margin: 0;
 }

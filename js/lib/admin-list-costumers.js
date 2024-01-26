@@ -72,7 +72,7 @@ document.getElementById('list-bought-courses').addEventListener('click', async (
             courseElement.className = 'cardCoursePurchaseInfo';
             courseElement.innerHTML = `<h2 class="purchaseInfo">${title}</h2>
                                        <p class="purchaseInfo">Delivery: ${course.delivery}</p>
-                                       <p class="purchaseInfo">Price: ${course.price}</p>
+                                       <p class="purchaseInfo">Price: $${course.price}</p>
                                        <p class="purchaseInfo"> Course days: ${course.automatedDaysCount}</p>
                                        <p class="purchaseInfo">Course registration number: ${course.reg}</p>
                                        <h3 class="purchaseInfo">Purchased By:</h3>`;
