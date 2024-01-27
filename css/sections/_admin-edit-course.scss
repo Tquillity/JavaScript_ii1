@@ -9,7 +9,13 @@
     padding: pxToRem(20);
     background-color: $form-background-color;
     border-radius: pxToRem(8);
+    color: #B9D86D;
+
+    h1 {
+        color: #B9D86D;
+    }
 }
+
 
 #updateCourseForm {
     display: flex;

@@ -29,6 +29,17 @@
     margin: pxToRem(10);
 }
 
+.list-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: pxToRem(10);
+}
+
+.filter-popular {
+    margin: 0 auto;
+}
+
   
 @media (max-width: $pageWidthTablet) {
     #courses-gallery {

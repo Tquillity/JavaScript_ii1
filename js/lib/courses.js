@@ -1,8 +1,11 @@
+// =================================
+// courses.js Gallery page for the courses, lists all courses in database
+// =================================
+
 import HttpClient from "../utilities/http.js";
 import { initHeader } from "../utilities/header.js";
 import { setupClickableElements } from "../utilities/interactionHandler.js";
 import { createDynamicCard } from "./dom.js";
-
 
 // Configuration for the course card to use the same createDynamicCard function in dom.js
 const coursesCardConfig = [
@@ -13,7 +16,19 @@ const coursesCardConfig = [
     // add more or different
 ];
 
+const filterPopularCourses = (courses) => {
+    return courses.filter(course => course.popular === true);
+};
 
+const displayCourses = (courses) => {
+    const gallery = document.querySelector('#courses-gallery');
+    gallery.innerHTML = ''; // Clearing the gallery before adding new cards
+        courses.forEach(course => {
+            const courseDetailCard = createDynamicCard(course, coursesCardConfig);
+            courseDetailCard.setAttribute('courseId', course.id); // Set courseId attribute for click handling
+            gallery.appendChild(courseDetailCard);
+        });
+};
 
 const initPage = async () => {
     initHeader();
@@ -22,10 +37,11 @@ const initPage = async () => {
     const http = new HttpClient(url);
     const courses = await http.get();
 
-    courses.forEach(course => {
-        const courseDetailCard = createDynamicCard(course, coursesCardConfig);
-        courseDetailCard.setAttribute('courseId', course.id); // Set courseId attribute for click handling
-        document.querySelector('#courses-gallery').appendChild(courseDetailCard);
+    displayCourses(courses);
+
+    document.querySelector ('#filter-popular').addEventListener('click', () => {
+        const popularCourses = filterPopularCourses(courses);
+        displayCourses(popularCourses);
     });
 
     // Setup click listeners after the cards are created and appended

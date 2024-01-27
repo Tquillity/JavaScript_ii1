@@ -3,6 +3,7 @@
     {
       "title": "System Development 101",
       "reg": "SD101",
+      "popular": true,
       "delivery": "Classroom",
       "imageUrl": "system.png",
       "startDate": "2024-04-27",
@@ -15,6 +16,7 @@
     {
       "title": "Mobile development",
       "reg": "MOB101",
+      "popular": false,
       "delivery": "Both",
       "imageUrl": "mobile.png",
       "startDate": "2024-07-13",
@@ -27,6 +29,7 @@
     {
       "title": "Introduction to Python Programming",
       "reg": "CS103",
+      "popular": false,
       "delivery": "Both",
       "imageUrl": "python.png",
       "startDate": "2024-08-12",
@@ -39,6 +42,7 @@
     {
       "title": "Mobile App Development with Flutter",
       "reg": "CS104",
+      "popular": false,
       "delivery": "Online",
       "imageUrl": "mobilesep.png",
       "startDate": "2024-01-10",
@@ -51,6 +55,7 @@
     {
       "title": "Back-End Development with Node.js",
       "reg": "CS105",
+      "popular": false,
       "delivery": "Online",
       "imageUrl": "nodejsBW.png",
       "startDate": "2024-09-21",
@@ -63,6 +68,7 @@
     {
       "title": "Database Management with SQL",
       "reg": "CS106",
+      "popular": false,
       "delivery": "Online",
       "imageUrl": "database.png",
       "startDate": "2024-04-23",
@@ -75,6 +81,7 @@
     {
       "title": "Front-End Development with React",
       "reg": "CS107",
+      "popular": false,
       "delivery": "Classroom",
       "imageUrl": "front.png",
       "startDate": "2024-02-15",
@@ -87,6 +94,7 @@
     {
       "title": "Cybersecurity Fundamentals",
       "reg": "CS108",
+      "popular": true,
       "delivery": "Online",
       "imageUrl": "cybersec.png",
       "startDate": "2024-06-10",
@@ -99,6 +107,7 @@
     {
       "title": "Game Development with Unity",
       "reg": "CS109",
+      "popular": true,
       "delivery": "Both",
       "imageUrl": "unity.png",
       "startDate": "2024-05-01",
@@ -111,6 +120,7 @@
     {
       "title": "UI/UX Design Principles",
       "reg": "CS110",
+      "popular": false,
       "delivery": "Classroom",
       "imageUrl": "uiux.png",
       "startDate": "2024-03-20",
@@ -123,6 +133,7 @@
     {
       "title": "Software Testing and QA",
       "reg": "CS111",
+      "popular": false,
       "delivery": "Online",
       "imageUrl": "testing.png",
       "startDate": "2024-08-05",
@@ -135,6 +146,7 @@
     {
       "title": "Blockchain Basics",
       "reg": "CS112",
+      "popular": true,
       "delivery": "Both",
       "imageUrl": "blockchain.png",
       "startDate": "2024-07-01",
@@ -147,6 +159,7 @@
     {
       "title": "Big Data Analytics",
       "reg": "CS100",
+      "popular": true,
       "delivery": "Classroom",
       "imageUrl": "bigdata.png",
       "startDate": "2024-09-05",
@@ -159,6 +172,7 @@
     {
       "title": "Back-End Development with Node.js",
       "reg": "CS101",
+      "popular": false,
       "delivery": "Online",
       "imageUrl": "nodejs.png",
       "startDate": "2024-04-27",
@@ -171,6 +185,7 @@
     {
       "title": "Machine Learning with Python",
       "reg": "CS102",
+      "popular": true,
       "delivery": "Both",
       "imageUrl": "python.png",
       "startDate": "2024-07-13",
@@ -183,6 +198,7 @@
     {
       "title": "Back-End Development with Node.js",
       "reg": "CS101 999",
+      "popular": false,
       "delivery": "Classroom",
       "imageUrl": "nodejs.png",
       "startDate": "2024-04-27",
@@ -195,6 +211,7 @@
     {
       "title": "UX/UI for the PROs",
       "reg": "PRO1000",
+      "popular": false,
       "delivery": "Both",
       "imageUrl": "uiux.png",
       "startDate": "2024-02-01",
@@ -207,6 +224,7 @@
     {
       "title": "Advanced software testing - with extra long title just to make sure that it looks okej styling wise. Now it looks good even longer!",
       "reg": "ADVsoft99",
+      "popular": false,
       "delivery": "Classroom",
       "imageUrl": "testing.png",
       "startDate": "2024-01-26",
@@ -316,6 +334,33 @@
           "price": "50"
         }
       ]
+    },
+    {
+      "firstName": "nastan",
+      "lastName": "dar",
+      "email": "nastan@dar.se",
+      "password": "nästan",
+      "invoiceAdress": "adress",
+      "invoiceZip": "222 222",
+      "invoiceCity": "city",
+      "invoiceCountry": "country",
+      "phone": "0708978978",
+      "userName": "nastan@dar.se",
+      "id": 4,
+      "purchasedCourses": [
+        {
+          "reg": "CS108",
+          "title": "Cybersecurity Fundamentals",
+          "delivery": "Online",
+          "price": "50"
+        },
+        {
+          "reg": "CS102",
+          "title": "Machine Learning with Python",
+          "delivery": "Classroom",
+          "price": "50"
+        }
+      ]
     }
   ],
   "adminUsers": [
@@ -332,6 +377,14 @@
       "lastName": "admin1",
       "email": "chef.two@we.com",
       "password": "megasecret"
+    },
+    {
+      "firstName": "newBoss",
+      "lastName": "newBoss",
+      "email": "new@boss.com",
+      "password": "boss",
+      "userName": "new@boss.com",
+      "id": 3
     }
   ]
 }
