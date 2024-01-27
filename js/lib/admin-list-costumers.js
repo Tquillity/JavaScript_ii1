@@ -1,3 +1,7 @@
+// =================================
+// admin-listcostumers.js function to lists all costumers or boughtcorses with buyers appended
+// =================================
+
 import HttpClient from '../utilities/http.js';
 import { createDynamicCard } from '../lib/dom.js';
 import { initHeader } from '../utilities/header.js';

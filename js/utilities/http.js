@@ -1,5 +1,5 @@
 // =========================================
-// CRUD-operations for the local JSON-server
+// http.js - CRUD-operations for the local JSON-server
 // =========================================
 
 export default class HttpClient {

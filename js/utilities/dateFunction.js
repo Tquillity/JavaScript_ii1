@@ -1,3 +1,7 @@
+// =================================
+// dateFunction.js - functions for calculating course days automatically to remove user error risk when creating courses
+// ================================= 
+
 document.getElementById('startDate').addEventListener('change', calculateCourseDays);
 document.getElementById('endDate').addEventListener('change', calculateCourseDays);
 

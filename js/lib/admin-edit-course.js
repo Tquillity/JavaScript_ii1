@@ -1,3 +1,7 @@
+// =================================
+// admin-edit-course.js is used to add, edit and delete courses from the json-server database.
+// =================================
+
 import HttpClient from "../utilities/http.js";
 import { initHeader } from "../utilities/header.js";
 import { convertFormDataToJson } from "../utilities/utilities.js";
@@ -9,7 +13,6 @@ const deleteButton = document.querySelector('#deleteButton');
 let courseId = 0;
 
 const initpage = async () => {
-    initHeader();
     courseId = location.search.split('=')[1];
     
     if (!courseId) {
@@ -31,8 +34,6 @@ const loadDataToForm = (course) => {
     const entries = new URLSearchParams(course).entries();
     for (let [key, value] of entries) {
         if (key !== 'id') {
-            console.log(key, value);
-            console.log(form.elements[key]);
             const input = form.elements[key];
             input.value = value;
         }

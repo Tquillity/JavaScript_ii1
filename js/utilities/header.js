@@ -1,3 +1,7 @@
+// =================================
+// header.js - header for all pages
+// ================================= 
+
 import { handleLoginSubmit } from './log-in.js';
 
 export function initHeader() {
@@ -42,6 +46,7 @@ export function initHeader() {
 }
 
 function toggleHamburgerMenu() {
+    
     document.querySelector('.hamburger').addEventListener('click', () => {
         console.log('Hamburger clicked');
         document.querySelector('.header-container').classList.toggle('active');

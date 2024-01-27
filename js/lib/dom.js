@@ -1,4 +1,6 @@
+// =================================
 // dom.js - Enhanced dynamic card creation and image click handling
+// ================================= 
 
 // Function to create a single element from configuration and data
 const createElementFromConfig = (config, data, imageClickHandler) => {

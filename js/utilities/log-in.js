@@ -1,3 +1,7 @@
+// =================================
+// log-in.js - handles login and admin login
+// ================================= 
+
 import HttpClient from "./http.js";
 
 async function handleLoginSubmit(event) {

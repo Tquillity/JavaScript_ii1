@@ -31,8 +31,6 @@ const displayCourses = (courses) => {
 };
 
 const initPage = async () => {
-    initHeader();
-
     const url = `http://localhost:3000/courses/`;
     const http = new HttpClient(url);
     const courses = await http.get();

@@ -1,3 +1,7 @@
+// =================================
+// course-details.js shows the indivudal details for a chosen course
+// =================================
+
 import HttpClient from "../utilities/http.js";
 import { initHeader } from "../utilities/header.js";
 import { createDynamicCard } from "./dom.js";
@@ -16,7 +20,6 @@ const detailedCourseCardConfig = [
     let courseId = 0;
 
 const initPage = async () => {
-    initHeader();
     courseId = location.search.split('=')[1];
     getCourse(courseId);
 };

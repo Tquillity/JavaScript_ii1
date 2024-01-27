@@ -1,3 +1,7 @@
+// =================================
+// user-creation.js - form for creating new users
+// ================================= 
+
 import { convertFormDataToJson } from '../utilities/utilities.js';
 import HttpClient from '../utilities/http.js';
 import { initHeader } from '../utilities/header.js'; // ! hur kommer det sig att denna laddar utan att jag kallar på den?

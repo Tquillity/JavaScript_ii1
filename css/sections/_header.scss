@@ -99,4 +99,13 @@ header ul {
     .header-container.active {
         display: block;
     }
+    
+    .loginForm {
+        position: absolut;
+        width: 100%;
+
+        #loginEmail, #loginPassword {
+            width: 100%;
+        }
+    }
 }
