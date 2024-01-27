@@ -23,7 +23,7 @@ export function initHeader() {
                 }
                 ${isAdmin ?
                     `
-                    <li class="menu-item nav-admin"><a href="admin-index.html">Administration</a></li>
+                    <li class="menu-item nav-admin"><a href="admin-index.html">Course Administration</a></li>
                     <li class="menu-item nav-admin"><a href="admin-list-costumers.html">Customers</a></li>
                     <li class="menu-item nav-admin"><a href="admin-user-creation.html">Add Admin Users</a></li>
                     ` : ""
@@ -83,8 +83,10 @@ function attachEventListeners() {
     document.addEventListener('click', (e) => { 
         const loginForm = document.getElementById('loginForm');
         const showLoginFormButton = document.getElementById('showLoginForm');
-        if (!loginForm.contains(e.target) && !showLoginFormButton.contains(e.target) && !loginForm.classList.contains('hidden')) { 
-            loginForm.classList.add('hidden'); 
+        if (loginForm && showLoginFormButton) {
+            if (!loginForm.contains(e.target) && !showLoginFormButton.contains(e.target) && !loginForm.classList.contains('hidden')) { 
+                loginForm.classList.add('hidden'); 
+            }
         }
     });
 }
