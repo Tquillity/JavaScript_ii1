@@ -69,7 +69,7 @@ header ul {
 }
 
 
-@media (max-width: $pageWidthMobile) {
+@media (max-width: $pageWidthTablet) {
     .hamburger {
         display: block;
     }
