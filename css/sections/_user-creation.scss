@@ -1,3 +1,7 @@
+// ====================================
+// user-creation.scss
+// ====================================
+
 .user-creation-container {
     max-width: pxToRem(600);
     margin: pxToRem(20) auto;
@@ -36,7 +40,6 @@
     background-color: #004494;
 }
 
-/* Adjusting placeholder color for better contrast */
 #userCreationForm input::placeholder {
     color: #999;
 }

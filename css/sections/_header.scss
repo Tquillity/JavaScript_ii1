@@ -1,3 +1,7 @@
+// ====================================
+// header.scss
+// ====================================
+
 .header-container {
     margin-right: auto;
     margin-left: auto;
@@ -57,7 +61,6 @@ header ul {
     visibility: visible;
 }
 
-// Hamburger Icon Style
 .hamburger {
     display: none; 
     cursor: pointer;
@@ -70,8 +73,6 @@ header ul {
     .hamburger {
         display: block;
     }
-
-
 
     .header-container {
         position: absolute;
