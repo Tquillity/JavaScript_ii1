@@ -6,6 +6,7 @@ import HttpClient from "../utilities/http.js";
 import { initHeader } from "../utilities/header.js";
 import { convertFormDataToJson } from "../utilities/utilities.js";
 import { calculateCourseDays } from "../utilities/dateFunction.js";
+import { checkAdminLogin } from "../utilities/auth.js";
 
 const form = document.querySelector('#updateCourseForm');
 const deleteButton = document.querySelector('#deleteButton');
@@ -13,6 +14,8 @@ const deleteButton = document.querySelector('#deleteButton');
 let courseId = 0;
 
 const initpage = async () => {
+    checkAdminLogin();
+
     courseId = location.search.split('=')[1];
     
     if (!courseId) {

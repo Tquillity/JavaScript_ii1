@@ -361,6 +361,14 @@
           "price": "50"
         }
       ]
+    },
+    {
+      "firstName": "hacker",
+      "lastName": "admin",
+      "email": "hacker@admin.com",
+      "password": "hacker",
+      "userName": "hacker@admin.com",
+      "id": 5
     }
   ],
   "adminUsers": [

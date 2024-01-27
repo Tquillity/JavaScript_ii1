@@ -5,6 +5,11 @@
 import HttpClient from '../utilities/http.js';
 import { createDynamicCard } from '../lib/dom.js';
 import { initHeader } from '../utilities/header.js';
+import { checkAdminLogin } from "../utilities/auth.js";
+
+const initPage = async () => {
+    checkAdminLogin();
+};
 
 const userSource = new HttpClient('http://localhost:3000/users');
 const courseSource = new HttpClient('http://localhost:3000/courses');
@@ -95,3 +100,5 @@ document.getElementById('list-bought-courses').addEventListener('click', async (
         console.error('Failed to list bought courses:', error);
     }
 });
+
+document.addEventListener('DOMContentLoaded', initPage);

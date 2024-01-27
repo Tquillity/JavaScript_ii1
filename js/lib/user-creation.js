@@ -4,12 +4,17 @@
 
 import { convertFormDataToJson } from '../utilities/utilities.js';
 import HttpClient from '../utilities/http.js';
-import { initHeader } from '../utilities/header.js'; // ! hur kommer det sig att denna laddar utan att jag kallar på den?
+import { initHeader } from '../utilities/header.js';
+import { checkAdminLogin } from '../utilities/auth.js';
 
 const userAccount = new HttpClient('http://localhost:3000/users');
 const adminAccount = new HttpClient('http://localhost:3000/adminUsers');
 
 document.addEventListener('DOMContentLoaded', () => {
+    if(window.location.pathname.endsWith('admin-user-creation.html')) {
+        checkAdminLogin();
+    }
+    
     const form = document.querySelector('#userCreationForm');
     form.addEventListener('submit', handleFormSubmit);
 });

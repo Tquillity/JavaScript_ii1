@@ -6,17 +6,7 @@ import HttpClient from "../utilities/http.js";
 import { initHeader } from "../utilities/header.js";
 import { setupClickableElements } from "../utilities/interactionHandler.js";
 import { createDynamicCard } from "./dom.js";
-
-// I no longer show the admin buttons for people who are not logged in as admin
-// But i keep this in case someone has the link to the page
-function checkAdminLogin() {
-    const isLoggedIn = localStorage.getItem('isLoggedIn');
-    const isAdmin = localStorage.getItem('isAdmin');
-    if (isLoggedIn !== 'true' || isAdmin !== 'true') {
-        window.location.href = 'index.html';
-        alert('Please log in as admin to access this page.');
-    }
-}
+import { checkAdminLogin } from "../utilities/auth.js";
 
 // Configuration for the course card to use the same createDynamicCard function in dom.js
 const courseCardConfig = [
