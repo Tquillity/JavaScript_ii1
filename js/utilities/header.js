@@ -51,7 +51,7 @@ function toggleHamburgerMenu() {
 function attachEventListeners() {
     const loginForm = document.getElementById('loginForm');
     if (loginForm) {
-        loginForm.addEventListener('submit', handleLoginSubmit);
+        loginForm.addEventListener('submit', handleLoginSubmit); // Original code for handling login submission
     }
 
     const showLoginForm = document.getElementById('showLoginForm');
@@ -73,6 +73,21 @@ function attachEventListeners() {
             window.location.href = 'index.html';
         });
     }
+
+    document.addEventListener('keydown', (e) => { 
+        if (e.key === "Escape") { 
+            document.getElementById('loginForm').classList.add('hidden'); 
+        }
+    });
+
+    document.addEventListener('click', (e) => { 
+        const loginForm = document.getElementById('loginForm');
+        const showLoginFormButton = document.getElementById('showLoginForm');
+        if (!loginForm.contains(e.target) && !showLoginFormButton.contains(e.target) && !loginForm.classList.contains('hidden')) { 
+            loginForm.classList.add('hidden'); 
+        }
+    });
 }
+
 
 document.addEventListener('DOMContentLoaded', initHeader);
