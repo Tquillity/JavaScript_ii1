@@ -20,7 +20,6 @@ const coursesCardConfig = [
     { elementType: 'img', attribute: 'src', dataField: 'imageUrl', prefix: '../assets/images/', className: 'course-image' },
     { elementType: 'p', textContent: 'Delivery Method: {{delivery}}', className: 'course-delivery' },
     { elementType: 'p', textContent: 'Start Date: {{startDate}} | End Date: {{endDate}}', className: 'course-dates' },
-    // add more or different
 ];
 const filterPopularCourses = (courses) => {
     return courses.filter(course => course.popular === true);
