@@ -1,6 +1,8 @@
 // =============
 // CourseModels.ts - safekeeping of UI interfaces
 // =============
+import { DetailedCourse } from "./courseModels";
+
 export interface Config {
     elementType: string;
     className?: string;
@@ -10,6 +12,7 @@ export interface Config {
     textContent?: string;
 }
 
-export interface Data {
-    [key: string]: any;
-}
+//export interface Data {
+//    [key: string]: any;
+//}
+export type Data = DetailedCourse;

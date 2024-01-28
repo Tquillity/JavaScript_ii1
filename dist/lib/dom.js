@@ -7,16 +7,17 @@ const createElementFromConfig = (config, data, imageClickHandler) => {
     if (config.attribute && config.dataField) {
         // Use setAttribute for dynamic assignment
         const attributeValue = config.prefix ? config.prefix + data[config.dataField] : data[config.dataField];
-        element.setAttribute(config.attribute, attributeValue);
+        element.setAttribute(config.attribute, attributeValue.toString());
         if (config.elementType === 'img' && imageClickHandler) {
             element.addEventListener('click', () => imageClickHandler(data));
         }
     }
     else if (config.textContent) {
-        element.textContent = config.textContent.replace(/\{\{(\w+)\}\}/g, (_, key) => data[key]);
+        element.textContent = config.textContent.replace(/\{\{(\w+)\}\}/g, (_, key) => data[key].toString());
     }
     return element;
 };
+export { createElementFromConfig };
 // Function to create a dynamic card based on a data object and a configuration array
 const createDynamicCard = (data, elementsConfig, imageClickHandler) => {
     const card = document.createElement('div');
