@@ -1,19 +1,7 @@
 // =================================
 // dom.js - Enhanced dynamic card creation and image click handling
 // ================================= 
-
-interface Config {
-    elementType: string;
-    className?: string;
-    attribute?: string;
-    prefix?: string;
-    dataField?: string;
-    textContent?: string;
-}
-
-interface Data {
-    [key: string]: any;
-}
+import { Config, Data } from '../models/models.js';
 
 // Function to create a single element from configuration and data
 const createElementFromConfig = (config: Config, data: Data, imageClickHandler?: (data: Data) => void): HTMLElement => {

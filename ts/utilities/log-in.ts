@@ -3,16 +3,7 @@
 // ================================= 
 
 import HttpClient from "../utilities/http.js";
-
-interface User {
-    email: string;
-    password: string;
-}
-
-interface Admin {
-    email: string;
-    password: string;
-}
+import { User, Admin } from "../models/models.js";
 
 async function handleLoginSubmit(event: Event): Promise<void> {
     event.preventDefault();

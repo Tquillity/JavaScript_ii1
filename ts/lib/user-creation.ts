@@ -6,21 +6,9 @@ import { convertFormDataToJson } from '../utilities/utilities.js';
 import HttpClient from '../utilities/http.js';
 import { initHeader } from '../utilities/header.js';
 import { checkAdminLogin } from '../utilities/auth.js';
+import { User, Admin } from '../models/models.js';
 
 initHeader();
-
-interface User {
-    email: string;
-    password: string;
-    firstName?: string;
-    lastName?: string;
-    invoiceAdress?: string;
-    invoiceZip?: string;
-    invoiceCity?: string;
-    invoiceCountry?: string;
-    phone?: string;
-    userName?: string;
-}
 
 const userAccount = new HttpClient('http://localhost:3000/users');
 const adminAccount = new HttpClient('http://localhost:3000/adminUsers');

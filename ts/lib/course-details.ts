@@ -5,32 +5,7 @@
 import HttpClient from "../utilities/http.js";
 import { initHeader } from "../utilities/header.js";
 import { createDynamicCard } from "../lib/dom.js";
-
-interface Course {
-    title: string;
-    imageUrl: string;
-    reg: string;
-    delivery: string;
-    startDate: string;
-    endate: string;
-    automatedDaysCount: string;
-    price: Number;
-    description: String;
-    id: Number;
-}
-
-interface User {
-    email: string;
-    id: number;
-    purchasedCourses?: PurchasedCourse[];
-}
-
-interface PurchasedCourse {
-    reg: string;
-    title: string;
-    delivery: string;
-    price: number;
-}
+import { DetailedCourse, User } from "../models/models.js";
 
 const detailedCourseCardConfig = [
     { elementType: 'h3', textContent: '{{title}}', className: 'course-title' },
@@ -58,7 +33,7 @@ const getCourse = async (id: number): Promise<void> => {
     displayCourseDetails(course);
 };
 
-const displayCourseDetails = (course: Course): void => {
+const displayCourseDetails = (course: DetailedCourse): void => {
     const container = document.getElementById('course-detail-container')!;
     const detailCard = createDynamicCard(course, detailedCourseCardConfig);
 
@@ -83,7 +58,7 @@ const displayCourseDetails = (course: Course): void => {
     }
 };
 
-function addBuyButton(card: HTMLElement, buttonText: string, course: Course, deliveryMethod: string): void {
+function addBuyButton(card: HTMLElement, buttonText: string, course: DetailedCourse, deliveryMethod: string): void {
     const button = document.createElement('button');
     button.className = 'buyButton';
     button.textContent = buttonText;

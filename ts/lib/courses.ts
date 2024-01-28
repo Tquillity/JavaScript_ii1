@@ -6,16 +6,7 @@ import HttpClient from "../utilities/http.js";
 import { initHeader } from "../utilities/header.js";
 import { setupClickableElements } from "../utilities/interactionHandler.js";
 import { createDynamicCard } from "../lib/dom.js";
-
-interface Course {
-    id: number;
-    title: string;
-    imageUrl: string;
-    delivery: string;
-    startDate: string;
-    endDate: string;
-    popular: boolean;
-}
+import { Course } from "../models/models.js";
 
 // Configuration for the course card to use the same createDynamicCard function in dom.js
 const coursesCardConfig = [
