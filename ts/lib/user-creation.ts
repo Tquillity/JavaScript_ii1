@@ -6,7 +6,7 @@ import { convertFormDataToJson } from '../utilities/utilities.js';
 import HttpClient from '../utilities/http.js';
 import { initHeader } from '../utilities/header.js';
 import { checkAdminLogin } from '../utilities/auth.js';
-import { User } from '../models/models.js';
+import { User } from '../models/UserModels.js';
 
 initHeader();
 

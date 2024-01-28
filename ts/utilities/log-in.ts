@@ -3,7 +3,7 @@
 // ================================= 
 
 import HttpClient from "../utilities/http.js";
-import { User, Admin } from "../models/models.js";
+import { User, Admin } from "../models/UserModels.js";
 
 async function handleLoginSubmit(event: Event): Promise<void> {
     event.preventDefault();

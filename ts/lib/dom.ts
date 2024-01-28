@@ -1,7 +1,7 @@
 // =================================
 // dom.js - Enhanced dynamic card creation and image click handling
 // ================================= 
-import { Config, Data } from '../models/models.js';
+import { Config, Data } from '../models/uiModels.js';
 
 // Function to create a single element from configuration and data
 const createElementFromConfig = (config: Config, data: Data, imageClickHandler?: (data: Data) => void): HTMLElement => {
