@@ -299,6 +299,18 @@
           "title": "Machine Learning with Python",
           "delivery": "Online",
           "price": "50"
+        },
+        {
+          "reg": "PRO1000",
+          "title": "UX/UI for the PROs",
+          "delivery": "Classroom",
+          "price": "999"
+        },
+        {
+          "reg": "CS100",
+          "title": "Big Data Analytics",
+          "delivery": "Classroom",
+          "price": "50"
         }
       ]
     },
@@ -361,14 +373,6 @@
           "price": "50"
         }
       ]
-    },
-    {
-      "firstName": "hacker",
-      "lastName": "admin",
-      "email": "hacker@admin.com",
-      "password": "hacker",
-      "userName": "hacker@admin.com",
-      "id": 5
     }
   ],
   "adminUsers": [
@@ -393,6 +397,14 @@
       "password": "boss",
       "userName": "new@boss.com",
       "id": 3
+    },
+    {
+      "firstName": "sista",
+      "lastName": "test",
+      "email": "sista@test.com",
+      "password": "sista",
+      "userName": "sista@test.com",
+      "id": 4
     }
   ]
 }
