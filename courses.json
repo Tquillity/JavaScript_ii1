@@ -87,7 +87,7 @@
       "startDate": "2024-02-15",
       "endDate": "2024-04-28",
       "automatedDaysCount": "52 (74)",
-      "price": "50",
+      "price": "500",
       "description": "This immersive classroom-based course is meticulously crafted to guide learners through the essentials and complexities of software development. Spanning essential programming foundations to sophisticated software engineering methodologies, the course immerses students in a thorough exploration of coding principles and development practices. By merging solid theoretical underpinnings with extensive practical exercises, participants will master the art of crafting, refining, and launching powerful software solutions.",
       "id": 8
     },
@@ -299,6 +299,18 @@
           "title": "Machine Learning with Python",
           "delivery": "Online",
           "price": "50"
+        },
+        {
+          "reg": "PRO1000",
+          "title": "UX/UI for the PROs",
+          "delivery": "Classroom",
+          "price": "999"
+        },
+        {
+          "reg": "CS100",
+          "title": "Big Data Analytics",
+          "delivery": "Classroom",
+          "price": "50"
         }
       ]
     },
@@ -363,12 +375,31 @@
       ]
     },
     {
-      "firstName": "hacker",
-      "lastName": "admin",
-      "email": "hacker@admin.com",
-      "password": "hacker",
-      "userName": "hacker@admin.com",
-      "id": 5
+      "firstName": "Angola",
+      "lastName": "Huttmann",
+      "email": "avatharin11@gmail.com",
+      "password": "Mikaelärbäst!!<3",
+      "invoiceAdress": "Skolgatan 1",
+      "invoiceZip": "14598",
+      "invoiceCity": "Stockholm",
+      "invoiceCountry": "Skåne",
+      "phone": "0707777777",
+      "userName": "avatharin11@gmail.com",
+      "id": 5,
+      "purchasedCourses": [
+        {
+          "reg": "ADVsoft99",
+          "title": "Advanced software testing - with extra long title just to make sure that it looks okej styling wise. Now it looks good even longer!",
+          "delivery": "Classroom",
+          "price": "0"
+        },
+        {
+          "reg": "SD101",
+          "title": "System Development 101",
+          "delivery": "Classroom",
+          "price": "50"
+        }
+      ]
     }
   ],
   "adminUsers": [
@@ -393,6 +424,22 @@
       "password": "boss",
       "userName": "new@boss.com",
       "id": 3
+    },
+    {
+      "firstName": "sista",
+      "lastName": "test",
+      "email": "sista@test.com",
+      "password": "sista",
+      "userName": "sista@test.com",
+      "id": 4
+    },
+    {
+      "firstName": "Angela",
+      "lastName": "Heitmann",
+      "email": "angolahuttmann@gmail.com",
+      "password": "Russinrumpa",
+      "userName": "angolahuttmann@gmail.com",
+      "id": 5
     }
   ]
 }

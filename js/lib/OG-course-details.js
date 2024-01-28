@@ -2,9 +2,9 @@
 // course-details.js shows the indivudal details for a chosen course
 // =================================
 
-import HttpClient from "../utilities/http.js";
-import { initHeader } from "../utilities/header.js";
-import { createDynamicCard } from "./dom.js";
+import HttpClient from "../utilities/OG-http.js";
+import { initHeader } from "../utilities/OG-header.js";
+import { createDynamicCard } from "./OG-dom.js";
 
 const detailedCourseCardConfig = [
     { elementType: 'h3', textContent: '{{title}}', className: 'course-title' },
