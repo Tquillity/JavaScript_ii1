@@ -5,7 +5,8 @@
 import HttpClient from "../utilities/http.js";
 import { initHeader } from "../utilities/header.js";
 import { createDynamicCard } from "../lib/dom.js";
-import { DetailedCourse, User } from "../models/models.js";
+import { User } from "../models/UserModels.js";
+import { DetailedCourse } from "../models/CourseModels.js";
 
 const detailedCourseCardConfig = [
     { elementType: 'h3', textContent: '{{title}}', className: 'course-title' },

@@ -1,7 +1,7 @@
 // =============
 // UserModels.ts - safekeeping of User interfaces
 // =============
-import { PurchasedCourse } from "./courseModels.js";
+import { PurchasedCourse } from "./CourseModels.js";
 
 export interface Admin {
     email: string;
